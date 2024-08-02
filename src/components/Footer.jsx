@@ -1,39 +1,16 @@
-import styled from 'styled-components';
 import footerLogo from '../assets/logo.png'; // Replace with your actual footer logo image
-
-const FooterContainer = styled.footer`
-  background-color: #CDE2D3;
-  padding: 20px;
-  text-align: center;
-`;
-
-const FooterText = styled.p`
-  font-size: 0.875em;
-  color: #1c4330;
-  margin: 10px 0;
-
-  @media (max-width: 768px) {
-    font-size: 0.75em;
-  }
-`;
-
-const FooterLogo = styled.img`
-  max-width: 100px;
-  height: auto;
-  margin: 10px 0;
-
-  @media (max-width: 768px) {
-    max-width: 80px;
-  }
-`;
 
 const Footer = () => {
   return (
-    <FooterContainer>
-      <FooterText>Terms of Service</FooterText>
-      <FooterLogo src={footerLogo} alt="SIPMT Logo" />
-      <FooterText>Copyright 2024 - SIPMT</FooterText>
-    </FooterContainer>
+    <footer className="bg-[#CDE2D3] p-5 text-center md:p-10">
+      <div className="md:flex md:justify-between md:items-center md:max-w-[1280px] md:mx-auto">
+        <p className="text-sm text-[#1c4330] my-2 md:text-base">Terms of Service</p>
+        <div className="flex justify-center my-2 md:my-0">
+          <img src={footerLogo} alt="SIPMT Logo" className="max-w-[100px] h-auto md:max-w-[120px]" />
+        </div>
+        <p className="text-sm text-[#1c4330] my-2 md:text-base">Copyright 2024 - SIPMT</p>
+      </div>
+    </footer>
   );
 };
 

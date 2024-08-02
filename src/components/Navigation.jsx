@@ -1,122 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/logo.png';
-import styled from 'styled-components';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
-const NavContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background-color: #CDE2D3;
-`;
-
-const NavContent = styled.nav`
-  width: 80%;
-  margin: 0 auto;
-  padding: 1rem;
-  border-bottom: 2px solid #043C2C;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    width: 90%;
-    padding: 0.5rem;
-    flex-wrap: wrap;
-  }
-`;
-
-const NavList = styled.ul`
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    display: ${props => (props.isOpen ? 'flex' : 'none')};
-  }
-`;
-
-const NavItem = styled.li`
-  position: relative;
-  margin: 0 1rem;
-
-  &.active::after {
-    content: '•';
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2rem;
-    color: #15825C;
-  }
-
-  @media (max-width: 768px) {
-    margin: 0.5rem 0;
-
-    &.active::after {
-      bottom: -10px;
-      font-size: 1.5rem;
-    }
-  }
-`;
-
-const NavLink = styled(Link)`
-  color: black;
-  text-decoration: none;
-  font-weight: 500;
-
-  &:hover, .active & {
-    color: #15825C;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-`;
-
-const LogoContainer = styled.div`
-  @media (max-width: 768px) {
-    flex: 1;
-  }
-`;
-
-const Logo = styled.img`
-  height: 70px;
-
-  @media (max-width: 768px) {
-    height: 50px;
-  }
-`;
-
-const Brand = styled.div`
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: black;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const MenuButton = styled.button`
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
+import PropTypes from 'prop-types';
 
 function Navigation() {
   const location = useLocation();
@@ -127,32 +12,58 @@ function Navigation() {
   };
 
   return (
-    <NavContainer>
-      <NavContent>
-        <LogoContainer>
-          <Logo src={logo} alt="Logo" />
-        </LogoContainer>
-        <MenuButton onClick={toggleMenu}>
+    <div className="fixed top-0 left-0 right-0 z-50 bg-[#CDE2D3]">
+      <nav className="w-full py-4 border-b-2 border-[#043C2C] flex justify-between items-center md:flex-nowrap flex-wrap px-8">
+        <div className="font-bold text-2xl text-black">SIPMT</div>
+        <button 
+          onClick={toggleMenu} 
+          className="md:hidden text-2xl cursor-pointer"
+        >
           {isOpen ? <FaTimes /> : <FaBars />}
-        </MenuButton>
-        <NavList isOpen={isOpen}>
-          <NavItem className={location.pathname === '/' ? 'active' : ''}>
-            <NavLink to="/" onClick={() => setIsOpen(false)}>HOME</NavLink>
+        </button>
+        <ul className={`${isOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row justify-around items-center w-full md:w-auto m-0 p-0 list-none`}>
+          <NavItem to="/" active={location.pathname === '/'} onClick={() => setIsOpen(false)}>
+            HOME
           </NavItem>
-          <NavItem className={location.pathname === '/speakers' ? 'active' : ''}>
-            <NavLink to="/speakers" onClick={() => setIsOpen(false)}>SPEAKERS</NavLink>
+          <NavItem to="/speakers" active={location.pathname === '/speakers'} onClick={() => setIsOpen(false)}>
+            SPEAKERS
           </NavItem>
-          <NavItem className={location.pathname === '/sponsorship' ? 'active' : ''}>
-            <NavLink to="/sponsorship" onClick={() => setIsOpen(false)}>SPONSORSHIP</NavLink>
+          <NavItem to="/sponsorship" active={location.pathname === '/sponsorship'} onClick={() => setIsOpen(false)}>
+            SPONSORSHIP
           </NavItem>
-          <NavItem className={location.pathname === '/contact' ? 'active' : ''}>
-            <NavLink to="/contact" onClick={() => setIsOpen(false)}>CONTACT</NavLink>
+          <NavItem to="/contact" active={location.pathname === '/contact'} onClick={() => setIsOpen(false)}>
+            CONTACT
           </NavItem>
-        </NavList>
-        <Brand>SIPMT</Brand>
-      </NavContent>
-    </NavContainer>
+        </ul>
+      </nav>
+    </div>
   );
 }
+
+function NavItem({ to, active, children, onClick }) {
+  return (
+    <li className={`relative mx-4 my-2 md:my-0 ${active ? 'active' : ''}`}>
+      <Link 
+        to={to} 
+        className="text-black hover:text-[#15825C] font-medium md:text-base text-xl"
+        onClick={onClick}
+      >
+        {children}
+      </Link>
+      {active && (
+        <span className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 text-[#15825C] text-4xl md:text-2xl">
+          •
+        </span>
+      )}
+    </li>
+  );
+}
+
+NavItem.propTypes = {
+  to: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default Navigation;
