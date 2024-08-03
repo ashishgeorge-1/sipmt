@@ -12,7 +12,7 @@ function Navigation() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-[#CDE2D3]">
+    <div className="fixed top-0 left-0  right-0 z-50 bg-[#CDE2D3]">
       <nav className="w-full py-4 border-b-2 border-[#043C2C] flex justify-between items-center md:flex-nowrap flex-wrap px-8">
         <div className="font-bold text-2xl text-black">SIPMT</div>
         <button 
@@ -28,7 +28,7 @@ function Navigation() {
           <NavItem to="/speakers" active={location.pathname === '/speakers'} onClick={() => setIsOpen(false)}>
             SPEAKERS
           </NavItem>
-          <NavItem to="/sponsorship" active={location.pathname === '/sponsorship'} onClick={() => setIsOpen(false)}>
+          <NavItem to="/sponsor" active={location.pathname === '/sponsor'} onClick={() => setIsOpen(false)}>
             SPONSORSHIP
           </NavItem>
           <NavItem to="/contact" active={location.pathname === '/contact'} onClick={() => setIsOpen(false)}>
@@ -51,7 +51,7 @@ function NavItem({ to, active, children, onClick }) {
         {children}
       </Link>
       {active && (
-        <span className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 text-[#15825C] text-4xl md:text-2xl">
+        <span className="absolute bottom-[-20px] left-1/2 mt-2 transform -translate-x-1/2 text-[#15825C] text-4xl md:text-2xl">
           •
         </span>
       )}

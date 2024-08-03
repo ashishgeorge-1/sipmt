@@ -16,6 +16,17 @@ h1, h2 {
   margin-bottom: 5rem;
 }
 
-p {
-  max-width: 600px;
+
+
+.leaflet-container {
+  height: 35vh;
+  width: 35vh;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .leaflet-container {
+    height: 50vh;
+    width: 50vh;
+  }
 }
