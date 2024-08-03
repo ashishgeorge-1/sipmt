@@ -205,7 +205,7 @@ function LandingPage() {
             cause, but also provide your brand with excellent visibility and
             engagement opportunities.
           </p>
-          <a href="#" className="text-[#15825C] font-bold hover:underline">
+          <a href="/sponsor" className="text-[#15825C] font-bold hover:underline">
             KNOW MORE ⤴
           </a>
         </div>

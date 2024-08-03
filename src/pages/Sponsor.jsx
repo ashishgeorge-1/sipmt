@@ -55,7 +55,7 @@ export default function Sponsorship() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen md:pt-20 pt-24 bg-[#CDE2D3] overflow-x-hidden">
+    <div className="flex flex-col min-h-screen md:pt-10 pt-10 bg-[#CDE2D3] overflow-x-hidden">
       <section className="flex flex-col gap-10 items-center w-full md:h-[100svh]  h-svh mx-auto justify-center align-middle">
         <div className="px-4 sm:px-6 lg:px-8">
           <h1 className="md:text-4xl text-3xl font-bold text-[#043C2C] md:mb-10 mb-5 text-center">
