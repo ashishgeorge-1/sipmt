@@ -26,8 +26,8 @@ function LandingPage() {
       <section className="flex md:flex-row flex-col gap-10 items-center w-full max-w-[1280px] h-[100vh]  mx-auto py-10 px-5 ">
        
         <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
-          <h3 className="md:text-xl font-thin text-xl  mb-2">JOIN US FOR A SEMINAR ON</h3>
-          <h2 className="md:text-4xl text-2xl mb-10 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
+          <h3 className="md:text-2xl font-thin text-xl  mb-2">JOIN US FOR A SEMINAR ON</h3>
+          <h2 className="md:text-5xl text-3xl mb-10 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
           <div className="flex items-center mb-4">
             <img src={dateIcon} alt="Calendar" className="w-5 h-5 mr-2" />
             <p className="text-lg text-[#043C2C] font-medium">9:30 am, 17 August 2024</p>
@@ -53,7 +53,7 @@ function LandingPage() {
         <img
           src={logo}
           alt="SIPMT Logo"
-          className="md:order-1 md:w-[433px] md:h-[510px] w-[200px] h-[250px] md:mx-20 md:mb-24 md:mt-16"
+          className="md:order-1 w-9/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
         />
       </section>
 
@@ -63,9 +63,9 @@ function LandingPage() {
             ORGANIZED BY
           </h2>
           <div className="flex flex-row md:justify-end items-center justify-center gap-10 md:gap-40  w-full">
-            <img src={org1} alt="Organization 1" className="h-16 w-auto " />
-            <img src={org2} alt="Organization 2" className="h-16 w-auto " />
-            <img src={org3} alt="Organization 3" className="h-16 w-auto " />
+            <img src={org1} alt="Organization 1" className="h-20 w-auto " />
+            <img src={org2} alt="Organization 2" className="h-20 w-auto " />
+            <img src={org3} alt="Organization 3" className="h-20 w-auto " />
           </div>
         </div>
       </section>
@@ -190,7 +190,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-[#CDE2D3] py-10 px-5 text-[#1c4330]">
+      <section className="bg-[#CDE2D3] py-10 px-5 text-[#1c4330] mx-2">
         <div className="max-w-[1280px] mx-auto text-left">
           <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
             JOIN US AS A SPONSOR

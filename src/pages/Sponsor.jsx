@@ -59,7 +59,7 @@ export default function Sponsorship() {
 
       <section className="flex flex-col gap-10 items-center w-full md:h-[100vh] h-full mx-auto md:pt-10">
         <div className="px-4 sm:px-6 lg:px-8">
-          <h1 className="md:text-4xl text-2xl font-bold text-[#043C2C] md:mb-10 mb-5 text-center">SPONSORSHIPS</h1>
+          <h1 className="md:text-4xl text-3xl font-bold text-[#043C2C] md:mb-10 mb-5 text-center">SPONSORSHIPS</h1>
           <div className="md:text-3xl text-xl font-normal w-full text-center">
             <p className="md:mb-6 mb-2">
               Join us as a sponsor for our upcoming motivational Seminar, focusing on <br />
@@ -82,7 +82,7 @@ export default function Sponsorship() {
           </div>
           <div className="flex flex-col items-center text-center">
             <img src={Marketing} alt="Marketing" className="w-20 h-20 md:w-28 md:h-28" />
-            <p className="mt-2 font-semibold">Marketing <br /> Opportunities</p>
+            <p className="mt-2 font-semibold">Marketing Opportunity</p>
           </div>
           <div className="flex flex-col items-center text-center">
             <img src={Brand} alt="Brand" className="w-20 h-20 md:w-28 md:h-28" />
@@ -90,7 +90,7 @@ export default function Sponsorship() {
           </div>
           <div className="flex flex-col items-center text-center">
             <img src={Demonstrate} alt="Demonstrate" className="w-20 h-20 md:w-28 md:h-28" />
-            <p className="mt-2 font-semibold">Demonstrate <br /> Leadership</p>
+            <p className="mt-2 font-semibold">Leadership</p>
           </div>
         </div>
       </section>
