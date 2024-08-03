@@ -28,7 +28,7 @@ function Navigation() {
           <NavItem to="/speakers" active={location.pathname === '/speakers'} onClick={() => setIsOpen(false)}>
             SPEAKERS
           </NavItem>
-          <NavItem to="/sponsorship" active={location.pathname === '/sponsorship'} onClick={() => setIsOpen(false)}>
+          <NavItem to="/sponsor" active={location.pathname === '/sponsor'} onClick={() => setIsOpen(false)}>
             SPONSORSHIP
           </NavItem>
           <NavItem to="/contact" active={location.pathname === '/contact'} onClick={() => setIsOpen(false)}>

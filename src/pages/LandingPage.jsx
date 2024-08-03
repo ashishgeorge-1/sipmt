@@ -16,34 +16,34 @@ import key4 from '../assets/key4.png';
 import slide1 from '../assets/slide1.jpeg.jpg';
 import slide2 from '../assets/slide2.jpeg.jpg';
 import slide3 from '../assets/slide3.jpeg.jpg';
-import mapImage from '../assets/map.png';
+
 
 function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen md:pt-28 pt-24 bg-[#CDE2D3] overflow-x-hidden">
+    <div className="flex flex-col min-h-screen md:pt-20 pt-24 bg-[#CDE2D3] overflow-x-hidden">
      
 
-      <section className="flex md:flex-row flex-col gap-10 items-center w-full max-w-[1280px] mx-auto py-10 px-5">
+      <section className="flex md:flex-row flex-col gap-10 items-center w-full max-w-[1280px] h-[100vh]  mx-auto py-10 px-5 ">
        
-        <div className="w-full md:order-1 order-2 md:w-3/4 lg:w-1/2">
-          <h3 className="md:text-2xl text-xl font-normal mb-2">JOIN US FOR A SEMINAR ON</h3>
+        <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
+          <h3 className="md:text-xl font-thin text-xl  mb-2">JOIN US FOR A SEMINAR ON</h3>
           <h2 className="md:text-4xl text-2xl mb-10 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
           <div className="flex items-center mb-4">
             <img src={dateIcon} alt="Calendar" className="w-5 h-5 mr-2" />
-            <p className="text-md text-[#043C2C]">9:30 am, 17 August 2024</p>
+            <p className="text-lg text-[#043C2C]">9:30 am, 17 August 2024</p>
           </div>
           <div className="flex items-start mb-10">
-            <img src={locationIcon} alt="Location" className="text-[#043C2C] w-5 h-5 mr-2 mt-1" />
-            <p className="text-md text-[#043C2C]">Alphonsian Pastoral Institute, Arunapuram, Pala</p>
+            <img src={locationIcon} alt="Location" className="text-[#043C2C] text-lg w-5 h-5 mr-2 mt-1" />
+            <p className="text-lg text-[#043C2C]">Alphonsian Pastoral Institute, Arunapuram, Pala</p>
           </div>
-          <a href="#" className="text-base text-black no-underline font-bold hover:underline uppercase">Register Now ⤴</a>
+          <a href="#" className=" text-lg text-black no-underline font-bold hover:underline uppercase">Register Now ⤴</a>
         </div>
         <img src={logo} alt="SIPMT Logo" className="md:order-1 md:w-[433px] md:h-[510px] w-[200px] h-[250px] md:mx-20 md:mb-24 md:mt-16" />
       </section>
 
       <section className="bg-white py-10 px-5">
         <div className="flex flex-col md:flex-row  md:items-start items-center max-w-[1280px] mx-auto">
-          <h2 className="text-2xl font-bold w-full text-[#043C2C] mb-5">ORGANIZED BY</h2>
+          <h2 className="text-2xl flex  font-bold w-full text-[#043C2C] mb-5">ORGANIZED BY</h2>
           <div className="flex flex-row md:justify-end items-center justify-center gap-10 md:gap-40  w-full">
             <img src={org1} alt="Organization 1" className="h-16 w-auto " />
             <img src={org2} alt="Organization 2" className="h-16 w-auto " />
@@ -55,7 +55,7 @@ function LandingPage() {
       <section className="bg-[#CDE2D3] py-10 px-5 text-bold-[#000000]">
         <div className="max-w-[1280px] mx-auto">
           <h2 className="text-2xl font-bold text-[#043C2C] mb-5">WHAT IS SIPMT?</h2>
-          <div className="w-full max-w-[1086px] mx-auto overflow-hidden rounded-lg mb-8">
+          <div className="w-full max-w-[960px] mx-auto overflow-hidden rounded-lg mb-8">
             <Carousel
               showThumbs={false}
               autoPlay
@@ -155,7 +155,7 @@ function LandingPage() {
         <div className="max-w-[1280px] mx-auto">
           <h2 className="text-2xl font-bold text-[#043C2C] mb-5 text-left">GETTING THERE</h2>
           <div className='flex md:flex-row flex-col gap-10 '>
-           <div className='mr-10'> <Map/></div>
+           <div className='mx-10'> <Map/></div>
           <div className='flex flex-col gap-8 '><p className="mb-2 "><strong>Location:</strong> Alphonsian Pastoral Institute, Arunapuram, Pala</p>
           <p className="mb-2"><strong >Time:</strong> 9:30 AM</p>
           <p className="mb-2"><strong>Date:</strong> August 17, 2024</p>
