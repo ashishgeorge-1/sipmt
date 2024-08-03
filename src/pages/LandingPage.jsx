@@ -20,15 +20,15 @@ import slide3 from '../assets/slide3.jpeg.jpg';
 
 function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen md:pt-20 pt-24 bg-[#CDE2D3] overflow-x-hidden">
+    <div className="flex flex-col min-h-screen  bg-[#CDE2D3] overflow-x-hidden">
      
 
-      <section className="flex md:flex-row flex-col gap-10 items-center w-full max-w-[1280px] h-[100vh]  mx-auto py-10 px-5 justify-center">
+      <section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh]  mx-auto py-10 px-5 justify-center">
        
         <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
           <h3 className="md:text-2xl font-thin text-xl  mb-2">JOIN US FOR A SEMINAR ON</h3>
-          <h2 className="md:text-5xl text-3xl mb-10 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
-          <div className="flex items-center mb-4">
+          <h2 className="md:text-5xl text-3xl mb-6 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
+          <div className="flex items-center mb-2">
             <img src={dateIcon} alt="Calendar" className="w-5 h-5 mr-2" />
             <p className="text-lg text-[#043C2C] font-medium">9:30 am, 17 August 2024</p>
           </div>
@@ -53,7 +53,7 @@ function LandingPage() {
         <img
           src={logo}
           alt="SIPMT Logo"
-          className="md:order-1 w-9/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
+          className="md:order-1 w-6/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
         />
       </section>
 

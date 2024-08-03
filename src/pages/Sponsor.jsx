@@ -55,13 +55,13 @@ export default function Sponsorship() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen md:pt-10 pt-10 bg-[#CDE2D3] overflow-x-hidden">
+    <div className="flex flex-col min-h-screen h-fit md:pt-28 mt-14 pt-24 bg-[#CDE2D3] overflow-x-hidden">
       <section className="flex flex-col gap-10 items-center w-full md:h-[100svh]  h-svh mx-auto justify-center align-middle">
         <div className="px-4 sm:px-6 lg:px-8">
           <h1 className="md:text-4xl text-3xl font-bold text-[#043C2C] md:mb-10 mb-5 text-center">
             SPONSORSHIPS
           </h1>
-          <div className="md:text-3xl text-xl font-normal w-full text-center">
+          <div className="md:text-3xl text-lg font-normal w-full text-center">
             <p className="md:mb-6 mb-2">
               Join us as a sponsor for our upcoming motivational Seminar,
               focusing on <br />
@@ -74,7 +74,7 @@ export default function Sponsorship() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap items-end mb-8 md:gap-32 gap-8 justify-around md:mt-20 mx-2">
+        <div className="flex flex-wrap items-end mb-16 pb-10 md:gap-32 gap-8 justify-around md:mt-20 mx-2">
           <div className="flex flex-col items-center text-center">
             <img
               src={Bandvisibility}
