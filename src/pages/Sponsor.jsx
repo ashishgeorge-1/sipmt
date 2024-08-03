@@ -71,7 +71,7 @@ export default function Sponsorship() {
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap items-end md:gap-32 gap-8 justify-around">
+        <div className="flex flex-wrap items-end mb-8 md:gap-32 gap-8 justify-around md:mt-20">
           <div className="flex flex-col items-center text-center">
             <img src={Bandvisibility} alt="Band Visibility" className="w-20 h-20 md:w-28 md:h-28" />
             <p className="mt-2 font-semibold">Brand Visibility</p>
@@ -98,17 +98,17 @@ export default function Sponsorship() {
       <section className="bg-white py-10 px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl mb-14 font-bold text-[#043C2C] text-center">Sponsorship Tiers and Benefits</h1>
         <div className="border border-gray-300 rounded-lg">
-          <div className="flex flex-wrap justify-center font-semibold  mb-10">
-            <button onClick={() => setActiveTier('Platinum')} className={`px-6 py-3 md:px-20 md:py-3 ${activeTier === 'Platinum' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
+          <div className="flex flex-wrap justify-center  font-semibold  mb-10">
+            <button onClick={() => setActiveTier('Platinum')} className={`px-3.5 py-3 md:px-20 md:py-3 ${activeTier === 'Platinum' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
               Platinum
             </button>
-            <button onClick={() => setActiveTier('Diamond')} className={`px-6 py-3 md:px-20 md:py-3 ${activeTier === 'Diamond' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
+            <button onClick={() => setActiveTier('Diamond')} className={`px-3.5 py-3 md:px-20 md:py-3 ${activeTier === 'Diamond' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
               Diamond
             </button>
-            <button onClick={() => setActiveTier('Gold')} className={`px-6 py-3 md:px-20 md:py-3 ${activeTier === 'Gold' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
+            <button onClick={() => setActiveTier('Gold')} className={`px-3.5 py-3 md:px-20 md:py-3 ${activeTier === 'Gold' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
               Gold
             </button>
-            <button onClick={() => setActiveTier('Silver')} className={`px-6 py-3 md:px-20 md:py-3 ${activeTier === 'Silver' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
+            <button onClick={() => setActiveTier('Silver')} className={`px-3.5 py-3 md:px-20 md:py-3 ${activeTier === 'Silver' ? 'bg-[#CDE2D3] text-[#043C2C]' : 'bg-white text-gray-600'} border border-gray-300 rounded-none shadow-md`}>
               Silver
             </button>
           </div>
@@ -124,17 +124,17 @@ export default function Sponsorship() {
       </section>
 
       <section className=" py-10 px-5 mt-10 rounded-lg border border-[#CDE2D3] ">
-        <h1 className="text-3xl font-bold text-[#043C2C] mb-4">ADDITIONAL BENEFITS FOR ALL SPONSORS</h1>
-        <p className="text-xl font-medium mb-4">
-          · Speaker Opportunity (Platinum & Diamond): Option to speak or be a panelist for the seminar.
+        <h1 className="text-3xl md:px-14 p-2   font-bold text-[#043C2C] mb-5">ADDITIONAL BENEFITS FOR ALL SPONSORS</h1>
+        <p className="text-xl font-medium mb-4 md:px-14 p-2 ">
+          - Speaker Opportunity (Platinum & Diamond): Option to speak or be a panelist for the seminar.
         </p>
-        <p className="text-xl font-medium">
-          · Recognition: Acknowledgment during the seminar and on social media.
+        <p className="text-xl font-medium md:px-14 p-2">
+           -Recognition: Acknowledgment during the seminar and on social media.
         </p>
       </section>
 
       <section className="bg-[#EAEAEA] py-10 px-5 mt-10 rounded-lg border border-[#CDE2D3] shadow-md">
-        <div className="px-14 py-10"><h1 className="text-3xl font-bold text-[#043C2C] mb-10">Contact Information</h1>
+        <div className="md:px-14 py-10"><h1 className="text-3xl font-bold text-[#043C2C] mb-10">Contact Information</h1>
         <p className="text-xl font-medium mb-8">
           For more details or to discuss customized sponsorship opportunities, please <br />contact:
         </p>

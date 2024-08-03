@@ -30,22 +30,22 @@ function LandingPage() {
           <h2 className="md:text-4xl text-2xl mb-10 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
           <div className="flex items-center mb-4">
             <img src={dateIcon} alt="Calendar" className="w-5 h-5 mr-2" />
-            <p className="text-lg text-[#043C2C]">9:30 am, 17 August 2024</p>
+            <p className="text-lg text-[#043C2C] font-medium">9:30 am, 17 August 2024</p>
           </div>
-          <div className="flex items-start mb-10">
+          <div className="flex items-center mb-10">
             <img
               src={locationIcon}
               alt="Location"
               className="text-[#043C2C] w-5 h-5 mr-2 mt-1"
             />
-            <p className="text-md text-[#043C2C]">
+            <p className="text-md font-medium text-[#043C2C]">
               Alphonsian Pastoral Institute, Arunapuram, Pala
             </p>
           </div>
           <a
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfUU16gu_51u1-1dS0R84-R7SsuLLP6-r1ZpstccCVgNTFbJA/viewform"
-            className="text-base text-black no-underline font-bold hover:underline uppercase"
+            className=" text-md text-black no-underline font-bold hover:underline uppercase"
           >
             Register Now ⤴
           </a>
@@ -217,8 +217,8 @@ function LandingPage() {
             GETTING THERE
           </h2>
           <div className="flex md:flex-row flex-col gap-10 ">
-            <div className="mr-10">
-              {" "}
+            <div className="ml-5 md:ml-0">
+             
               <Map />
             </div>
             <div className="flex flex-col gap-8 ">
