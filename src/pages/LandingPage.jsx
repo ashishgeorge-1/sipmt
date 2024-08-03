@@ -1,7 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Footer from '../components/Footer';
-
+import Map from "../components/map"
 // Import all the required images
 import logo from '../assets/logo.png';
 import dateIcon from '../assets/date.png';
@@ -20,38 +20,34 @@ import mapImage from '../assets/map.png';
 
 function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#CDE2D3] overflow-x-hidden">
-      <header className="bg-[#CDE2D3] py-4 px-5">
-        <div className="flex items-center justify-between max-w-[1280px] mx-auto">
-          <h1 className="text-2xl text-[#1c4330] font-bold">SIPMT</h1>
-          <button className="text-[#1c4330] text-2xl">☰</button>
-        </div>
-      </header>
+    <div className="flex flex-col min-h-screen md:pt-28 pt-24 bg-[#CDE2D3] overflow-x-hidden">
+     
 
-      <section className="flex flex-col items-center w-full max-w-[1280px] mx-auto py-10 px-5">
-        <img src={logo} alt="SIPMT Logo" className="w-64 h-64 mb-10" />
-        <div className="w-full md:w-3/4 lg:w-1/2">
-          <h3 className="text-sm font-normal mb-2">JOIN US FOR A SEMINAR ON</h3>
-          <h2 className="text-3xl mb-6 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
-          <div className="flex items-center mb-2">
+      <section className="flex md:flex-row flex-col gap-10 items-center w-full max-w-[1280px] mx-auto py-10 px-5">
+       
+        <div className="w-full md:order-1 order-2 md:w-3/4 lg:w-1/2">
+          <h3 className="md:text-2xl text-xl font-normal mb-2">JOIN US FOR A SEMINAR ON</h3>
+          <h2 className="md:text-4xl text-2xl mb-10 text-[#043C2C] font-bold">SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK</h2>
+          <div className="flex items-center mb-4">
             <img src={dateIcon} alt="Calendar" className="w-5 h-5 mr-2" />
-            <p className="text-sm">9:30 am, 17 August 2024</p>
+            <p className="text-md text-[#043C2C]">9:30 am, 17 August 2024</p>
           </div>
-          <div className="flex items-start mb-6">
-            <img src={locationIcon} alt="Location" className="w-5 h-5 mr-2 mt-1" />
-            <p className="text-sm">Alphonsian Pastoral Institute,<br />Arunapuram, Pala</p>
+          <div className="flex items-start mb-10">
+            <img src={locationIcon} alt="Location" className="text-[#043C2C] w-5 h-5 mr-2 mt-1" />
+            <p className="text-md text-[#043C2C]">Alphonsian Pastoral Institute, Arunapuram, Pala</p>
           </div>
           <a href="#" className="text-base text-black no-underline font-bold hover:underline uppercase">Register Now ⤴</a>
         </div>
+        <img src={logo} alt="SIPMT Logo" className="md:order-1 md:w-[433px] md:h-[510px] w-[200px] h-[250px] md:mx-20 md:mb-24 md:mt-16" />
       </section>
 
       <section className="bg-white py-10 px-5">
-        <div className="flex flex-col items-start max-w-[1280px] mx-auto">
-          <h2 className="text-2xl font-bold text-[#043C2C] mb-5">ORGANIZED BY</h2>
-          <div className="flex justify-center md:justify-between w-full">
-            <img src={org1} alt="Organization 1" className="h-16 w-auto mx-8" />
-            <img src={org2} alt="Organization 2" className="h-16 w-auto mx-8" />
-            <img src={org3} alt="Organization 3" className="h-16 w-auto mx-8" />
+        <div className="flex flex-col md:flex-row  md:items-start items-center max-w-[1280px] mx-auto">
+          <h2 className="text-2xl font-bold w-full text-[#043C2C] mb-5">ORGANIZED BY</h2>
+          <div className="flex flex-row md:justify-end items-center justify-center gap-10 md:gap-40  w-full">
+            <img src={org1} alt="Organization 1" className="h-16 w-auto " />
+            <img src={org2} alt="Organization 2" className="h-16 w-auto " />
+            <img src={org3} alt="Organization 3" className="h-16 w-auto " />
           </div>
         </div>
       </section>
@@ -155,14 +151,17 @@ function LandingPage() {
 </section>
 
 
-      <section className="bg-white py-10 px-5 text-[#1c4330]">
+      <section className="bg-white py-10 px-5  text-[#1c4330]">
         <div className="max-w-[1280px] mx-auto">
           <h2 className="text-2xl font-bold text-[#043C2C] mb-5 text-left">GETTING THERE</h2>
-          <img src={mapImage} alt="Map" className="w-full max-w-2xl mx-auto mb-5" />
-          <p className="mb-2"><strong>Location:</strong> Alphonsian Pastoral Institute, Arunapuram, Pala</p>
-          <p className="mb-2"><strong>Time:</strong> 9:30 AM</p>
+          <div className='flex md:flex-row flex-col gap-10 '>
+           <div className='mr-10'> <Map/></div>
+          <div className='flex flex-col gap-8 '><p className="mb-2 "><strong>Location:</strong> Alphonsian Pastoral Institute, Arunapuram, Pala</p>
+          <p className="mb-2"><strong >Time:</strong> 9:30 AM</p>
           <p className="mb-2"><strong>Date:</strong> August 17, 2024</p>
-          <p className="mb-2"><strong>Contact Us:</strong> sipmt.pala@gmail.com</p>
+          <p className="mb-2"><strong>Contact Us:</strong> sipmt.pala@gmail.com</p></div>
+          </div>
+          
         </div>
       </section>
 
