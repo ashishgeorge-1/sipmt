@@ -10,6 +10,9 @@ const Footer = () => {
         </div>
         <p className="text-sm text-[#1c4330] my-2 md:text-base">Copyright 2024 - SIPMT</p>
       </div>
+      <div className="mt-4">
+        <p className="text-sm text-[#1c4330]">Powered by <a href="https://blackswitch.tech" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">Blackswitch Technologies</a></p>
+      </div>
     </footer>
   );
 };

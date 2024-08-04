@@ -91,14 +91,7 @@ export default function Sponsorship() {
             />
             <p className="mt-2 font-semibold">Networking</p>
           </div>
-          <div className="flex flex-col items-center text-center">
-            <img
-              src={Marketing}
-              alt="Marketing"
-              className="w-20 h-20 md:w-28 md:h-28"
-            />
-            <p className="mt-2 font-semibold">Marketing Opportunity</p>
-          </div>
+
           <div className="flex flex-col items-center text-center">
             <img
               src={Brand}
@@ -126,7 +119,7 @@ export default function Sponsorship() {
           <div className="grid grid-cols-4 justify-center  font-semibold  mb-10 md:w-7/12 md:mx-auto">
             <button
               onClick={() => setActiveTier("Platinum")}
-              className={`px-3.5 py-3 md:px-20 md:py-3 text-sm ${
+              className={`px-3.5 py-3 md:px-20 md:py-3 text-xs md:text-sm ${
                 activeTier === "Platinum"
                   ? "bg-[#CDE2D3] text-[#043C2C]"
                   : "bg-white text-gray-600"
@@ -136,7 +129,7 @@ export default function Sponsorship() {
             </button>
             <button
               onClick={() => setActiveTier("Diamond")}
-              className={`px-3.5 py-3 md:px-20 md:py-3 text-sm  ${
+              className={`px-3.5 py-3 md:px-20 md:py-3 text-xs md:text-sm  ${
                 activeTier === "Diamond"
                   ? "bg-[#CDE2D3] text-[#043C2C]"
                   : "bg-white text-gray-600"
@@ -146,7 +139,7 @@ export default function Sponsorship() {
             </button>
             <button
               onClick={() => setActiveTier("Gold")}
-              className={`px-3.5 py-3 md:px-20 md:py-3 text-sm  ${
+              className={`px-3.5 py-3 md:px-20 md:py-3 text-xs md:text-sm   ${
                 activeTier === "Gold"
                   ? "bg-[#CDE2D3] text-[#043C2C]"
                   : "bg-white text-gray-600"
@@ -156,7 +149,7 @@ export default function Sponsorship() {
             </button>
             <button
               onClick={() => setActiveTier("Silver")}
-              className={`px-3.5 py-3 md:px-20 md:py-3 text-sm  ${
+              className={`px-3.5 py-3 md:px-20 md:py-3 text-xs md:text-sm   ${
                 activeTier === "Silver"
                   ? "bg-[#CDE2D3] text-[#043C2C]"
                   : "bg-white text-gray-600"
@@ -199,35 +192,32 @@ export default function Sponsorship() {
       </section>
 
       <section className="bg-[#EAEAEA] py-12 px-8 mt-12 rounded-lg border border-[#CDE2D3] shadow-lg">
-  <div className="md:px-16 py-12">
-    <h1 className="text-4xl font-bold text-[#043C2C] mb-8">
-      Contact Information
-    </h1>
-    <p className="text-lg font-medium mb-6">
-      For more details or to discuss customized sponsorship opportunities, please 
-      contact:
-    </p>
-    <div className="flex items-start mb-8">
-      <div className="w-1/12 text-center">
-      📞      </div>
-      <div className="ml-4">
-        <p className="text-xl font-medium">Er Shaji Mathew</p>
-        <p className="text-xl">Cell: 9447140251</p>
-      </div>
-    </div>
-    <div className="flex items-start">
-      <div className="w-1/12 text-center">
-      📞      </div>
-      <div className="ml-4">
-        <p className="text-xl font-medium">Gp Capt Babu Joseph (Veteran)</p>
-        <p className="text-xl">Cell: 9449050283</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-      <Footer />
+        <div className="md:px-16 py-12">
+          <h1 className="text-4xl font-bold text-[#043C2C] mb-8">
+            Contact Information
+          </h1>
+          <p className="text-lg font-medium mb-6">
+            For more details or to discuss customized sponsorship opportunities,
+            please contact:
+          </p>
+          <div className="flex items-start mb-8">
+            <div className="w-1/12 text-center">📞 </div>
+            <div className="ml-4">
+              <p className="text-lg font-medium">Er Shaji Mathew</p>
+              <p className="text-lg">Cell: 9447140251</p>
+            </div>
+          </div>
+          <div className="flex items-start">
+            <div className="w-1/12 text-center">📞 </div>
+            <div className="ml-4">
+              <p className="text-lg font-medium">
+                Gp Capt Babu Joseph (Veteran)
+              </p>
+              <p className="text-lg">Cell: 9449050283</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

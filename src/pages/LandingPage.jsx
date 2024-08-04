@@ -13,6 +13,7 @@ import key1 from '../assets/key1.png';
 import key2 from '../assets/key2.png';
 import key3 from '../assets/key3.png';
 import key4 from '../assets/key4.png';
+import anoop from '../assets/anoop.png';
 import slide1 from '../assets/slide1.jpeg.jpg';
 import slide2 from '../assets/slide2.jpeg.jpg';
 import slide3 from '../assets/slide3.jpeg.jpg';
@@ -161,31 +162,16 @@ function LandingPage() {
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
               <img
-                src="src/assets/anoop.png"
+                src={anoop}
                 alt="Er. Anoop Ambika"
                 className="w-32 h-32 rounded-full object-cover mb-4"
               />
               <h3 className="text-xl mb-2">Er. Anoop Ambika</h3>
               <p className="text-gray-600">CEO of Kerala Startup Mission</p>
             </div>
-            <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
-              <img
-                src="src/assets/anoop.png"
-                alt="Er. Anoop Ambika"
-                className="w-32 h-32 rounded-full object-cover mb-4"
-              />
-              <h3 className="text-xl mb-2">Er. Anoop Ambika</h3>
-              <p className="text-gray-600">CEO of Kerala Startup Mission</p>
-            </div>
-            <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
-              <img
-                src="src/assets/anoop.png"
-                alt="Er. Anoop Ambika"
-                className="w-32 h-32 rounded-full object-cover mb-4"
-              />
-              <h3 className="text-xl mb-2">Er. Anoop Ambika</h3>
-              <p className="text-gray-600">CEO of Kerala Startup Mission</p>
-            </div>
+            <h2 className="text-lg font-bold text-[#043C2C] mb-5">
+            More speakers to be decided soon.
+          </h2>
           </div>
         </div>
       </section>
@@ -237,10 +223,45 @@ function LandingPage() {
               </p>
             </div>
           </div>
+          <div className="flex-1 mt-10">
+            <h3 className="text-xl font-semibold mb-4">
+              Invitation Committee Chair
+            </h3>
+            <p className="mb-2">
+              <strong>Name:</strong> Er. Michael Thomas Panjikunnel
+            </p>
+            <p className="mb-2">
+              <strong>Phone:</strong>{" "}
+              <a href="tel:+919446496045" className="text-blue-600 underline">
+                9446496045
+              </a>
+            </p>
+          </div>
+          <div className="flex-1 mt-10">
+            <h3 className="text-xl font-semibold mb-4">Sponsorship Contacts</h3>
+            <p className="mb-2">
+              <strong>Name:</strong> Er Shaji Mathew
+            </p>
+            <p className="mb-2">
+              <strong>Cell:</strong>{" "}
+              <a href="tel:+919447140251" className="text-blue-600 underline">
+                9447140251
+              </a>
+            </p>
+            <p className="mt-4">
+              <strong>Name:</strong> Gp Capt Babu Joseph (Veteran)
+            </p>
+            <p className="mb-2">
+              <strong>Cell:</strong>{" "}
+              <a href="tel:+919449050283" className="text-blue-600 underline">
+                9449050283
+              </a>
+            </p>
+          </div>
         </div>
       </section>
 
-      <Footer />
+      
     </div>
   );
 }
