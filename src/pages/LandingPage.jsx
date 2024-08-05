@@ -171,7 +171,7 @@ function LandingPage() {
               </p>
             </div>
             <div className=" flex justify-center items-center pt-10">
-            <video className="w-[50vw] h-auto" controls>
+            <video className="md:w-[50vw] w-[100vw] h-auto" controls>
               <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
