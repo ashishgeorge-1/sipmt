@@ -102,7 +102,7 @@ function LandingPage() {
         <AiOutlineCalendar size={20} className="text-[#043C2C] mr-2" />
         <p className="text-md font-medium text-[#043C2C]">
         <a
-        href="https://www.example.com"
+        href="/invitation letter (2).pdf"
         className="no-underline flex items-center text-md font-semibold "
       >
         Invitation
@@ -172,7 +172,7 @@ function LandingPage() {
             </div>
             <div className=" flex justify-center items-center pt-10">
             <video className="md:w-[50vw] w-[100vw] h-auto" controls>
-              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
+              <source src="/VID-20240804-WA0023.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

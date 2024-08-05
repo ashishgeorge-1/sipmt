@@ -78,7 +78,7 @@ export default function Sponsorship() {
             </p>
             
     
-      <a href="/path-to-your-file" download className="text-[#043C2C] flex items-center justify-center text-sm">
+      <a href="/SPONSORSHIP SCHEME FOR SEMINAR-APPROVED (4).pdf" download className="text-[#043C2C] flex items-center justify-center text-sm">
         <span>  Click here to Download</span> 
         <MdDownload size={20} className="ml-1" /> 
       </a>
