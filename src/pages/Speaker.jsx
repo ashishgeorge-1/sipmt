@@ -1,6 +1,6 @@
 import React from 'react'
 
-import anoop from '../assets/anoop.png';
+import anoop from '../assets/anoop.jpeg';
 export default function Speaker() {
   return (
     <section className="bg-white py-10 px-5 text-[#1c4330] h-svh">
