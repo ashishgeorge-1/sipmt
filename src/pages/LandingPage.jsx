@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FiArrowUpRight } from 'react-icons/fi';
 import Footer from "../components/Footer";
 import Map from "../components/map";
 // Import all the required images
@@ -19,6 +20,7 @@ import anoop from "../assets/anoop.jpeg";
 import slide1 from "../assets/pala-kerala-tourism-entry-fee-timings-holidays-reviews-header.jpg";
 import slide2 from "../assets/slide2.jpeg.jpg";
 import slide3 from "../assets/slide3.jpeg.jpg";
+import { AiOutlineCalendar } from 'react-icons/ai';
 
 function LoaderOverlay() {
   return (
@@ -69,9 +71,12 @@ function LandingPage() {
       >
         <section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
           <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
-            <h3 className="md:text-2xl font-thin text-xl mb-2">
-              JOIN US FOR A SEMINAR ON
-            </h3>
+          <h3 className="md:text-2xl underline font-thin text-xl mb-2">
+         
+            JOIN US FOR A SEMINAR ON
+          
+</h3>
+
             <h2 className="md:text-5xl text-3xl mb-6 text-[#043C2C] font-bold">
               SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK
             </h2>
@@ -90,7 +95,20 @@ function LandingPage() {
               <p className="text-md font-medium text-[#043C2C]">
                 Alphonsian Pastoral Institute, Arunapuram, Pala
               </p>
+              
             </div>
+
+            <div className="flex items-center mb-4">
+        <AiOutlineCalendar size={20} className="text-[#043C2C] mr-2" />
+        <p className="text-md font-medium text-[#043C2C]">
+        <a
+        href="https://www.example.com"
+        className="no-underline flex items-center text-md font-semibold "
+      >
+        Invitation
+        
+      </a>        </p>
+      </div>
             <a
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfUU16gu_51u1-1dS0R84-R7SsuLLP6-r1ZpstccCVgNTFbJA/viewform"
@@ -125,20 +143,20 @@ function LandingPage() {
               WHAT IS SIPMT?
             </h2>
             <div className="w-full max-w-[1086px] mx-auto overflow-hidden rounded-lg mb-8">
-              <Carousel
-                showThumbs={false}
-                autoPlay
-                infiniteLoop
-                interval={3000}
-                showStatus={false}
-                dynamicHeight={true}
-                emulateTouch={true}
-              >
-                <div>
-                  <img src={slide1} alt="Slide 1" className="w-full h-auto" />
-                </div>
-          
-              </Carousel>
+            <Carousel
+          showThumbs={false}
+          autoPlay
+          infiniteLoop
+          interval={3000}
+          showStatus={false}
+          dynamicHeight={true}
+          emulateTouch={true}
+        >
+          <div>
+            <img src={slide1} alt="Slide 1" className="w-full h-auto" />
+          </div>
+         
+        </Carousel>
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
@@ -152,6 +170,12 @@ function LandingPage() {
                 Healthcare, While Fostering Local Talent And Employment.
               </p>
             </div>
+            <div className=" flex justify-center items-center pt-10">
+            <video className="w-[50vw] h-auto" controls>
+              <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           </div>
         </section>
 
