@@ -161,9 +161,9 @@ function LandingPage() {
         <section className="bg-white py-10 px-5">
           <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">
             <h2 className="text-2xl font-bold w-full text-[#043C2C] mt-5 ">
-             SPONSORED By
+             SPONSORED BY
             </h2>
-            <div className="flex flex-row md:justify-center items-center justify-center gap-10 md:gap-40 w-full h-fit">
+            <div className="flex flex-row md:justify-center items-center justify-center gap-10 md:gap-40 w-full h-fit mt-5 md:mt-0">
               <img src={spon1} alt="Organization 1" className="h-20 w-auto" />
              
             </div>
