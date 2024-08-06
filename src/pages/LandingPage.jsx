@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import Footer from "../components/Footer";
 import Map from "../components/map";
+import Contact from "./Contact"
 // Import all the required images
 import logo from "../assets/Meenachil Industrial Parks Logo.png";
 import logosvg from "../assets/logo.svg";
@@ -12,6 +13,7 @@ import locationIcon from "../assets/location.png";
 import org1 from "../assets/org1.png";
 import org2 from "../assets/org2.png";
 import org3 from "../assets/org3.png";
+import spon1 from "../assets/somanylogo.jpg"
 import key1 from "../assets/key1.png";
 import key2 from "../assets/key2.png";
 import key3 from "../assets/key3.png";
@@ -71,7 +73,7 @@ function LandingPage() {
       >
         <section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
           <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
-            <h3 className="md:text-2xl underline font-thin text-xl mb-2">
+            <h3 className="md:text-2xl  font-thin text-xl mb-2">
               JOIN US FOR A SEMINAR ON
             </h3>
 
@@ -122,7 +124,7 @@ function LandingPage() {
               <p className="text-md font-medium text-[#043C2C]">
                 <a
                   href="/sponsors"
-                  className="no-underline flex items-center text-md font-semibold "
+                  className="no-underline flex items-center  text-md font-semibold "
                 >
                   Our sponsors
                 </a>{" "}
@@ -155,18 +157,19 @@ function LandingPage() {
           />
         </section>
 
+       
         <section className="bg-white py-10 px-5">
           <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">
-            <h2 className="text-2xl font-bold w-full text-[#043C2C] mb-5">
-              ORGANIZED BY
+            <h2 className="text-2xl font-bold w-full text-[#043C2C] mt-5 ">
+             SPONSORED By
             </h2>
-            <div className="flex flex-row md:justify-end items-center justify-center gap-10 md:gap-40 w-full h-fit">
-              <img src={org1} alt="Organization 1" className="h-20 w-auto" />
-              <img src={org2} alt="Organization 2" className="h-20 w-auto" />
-              <img src={org3} alt="Organization 3" className="h-20 w-auto" />
+            <div className="flex flex-row md:justify-center items-center justify-center gap-10 md:gap-40 w-full h-fit">
+              <img src={spon1} alt="Organization 1" className="h-20 w-auto" />
+             
             </div>
           </div>
         </section>
+      
 
         <section className="bg-[#CDE2D3] py-10 px-5 text-bold-[#000000]">
           <div className="max-w-[1280px] mx-auto">
@@ -201,7 +204,7 @@ function LandingPage() {
               </p>
             </div>
             <div className=" flex justify-center items-center pt-10">
-              <video className="md:w-[50vw] w-[100vw] h-auto" controls>
+              <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
                 <source src="/VID-20240804-WA0023.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -250,8 +253,20 @@ function LandingPage() {
             </div>
           </div>
         </section>
+        <section className="bg-white py-5 px-5 ">
+          <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">
+            <h2 className="text-2xl mt-5 font-bold w-full text-[#043C2C] mb-5">
+              ORGANIZED BY
+            </h2>
+            <div className="flex flex-row md:justify-end items-center justify-center gap-10 md:gap-40 w-full h-fit">
+              <img src={org1} alt="Organization 1" className="h-20 w-auto" />
+              <img src={org2} alt="Organization 2" className="h-20 w-auto" />
+              <img src={org3} alt="Organization 3" className="h-20 w-auto" />
+            </div>
+          </div>
+        </section>
 
-        <section className="bg-white py-10 px-5 text-[#1c4330]">
+        <section className=" py-10 px-5 text-[#1c4330]">
           <div className="max-w-[1280px] mx-auto">
             <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
               PRESENTING OUR PANEL OF DISTINGUISHED SPEAKERS
@@ -274,8 +289,11 @@ function LandingPage() {
 
               {/* Add more speakers here */}
             </div>
+            
           </div>
         </section>
+       
+        <Contact/>
       </div>
     </>
   );

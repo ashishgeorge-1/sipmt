@@ -7,7 +7,10 @@ export default function Contact() {
         <h2 className="text-3xl font-bold text-[#043C2C] mb-8 text-left border-b-2 border-gray-300 pb-4">
           Contact Us
         </h2>
-        <div className="flex flex-col md:flex-row gap-16">
+        <div className="flex items-center justify-center pb-5 border-b-2 "><Map/></div>
+        
+        
+        <div className="flex flex-col md:flex-row pt-5 md:gap-16 gap-8">
           <div className="flex-1">
             <h3 className="text-xl font-semibold mb-4">Event Details</h3>
             <p className="mb-2">
