@@ -16,6 +16,8 @@ import org3 from "../assets/org3.png";
 import spon1 from "../assets/somanylogo.jpg"
 import key1 from "../assets/key1.png";
 import key2 from "../assets/key2.png";
+import { HiOutlineArrowUpRight } from "react-icons/hi2";
+
 import key3 from "../assets/key3.png";
 import key4 from "../assets/key4.png";
 import anoop from "../assets/anoop.jpeg";
@@ -71,9 +73,11 @@ function LandingPage() {
           isLoading ? "pointer-events-none" : ""
         }`}
       >
-        <section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
+\
+
+<section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
           <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
-            <h3 className="md:text-2xl  font-thin text-xl mb-2">
+            <h3 className="md:text-2xl underline font-thin text-xl mb-2">
               JOIN US FOR A SEMINAR ON
             </h3>
 
@@ -86,7 +90,7 @@ function LandingPage() {
                 9:30 am, 17 August 2024
               </p>
             </div>
-            <div className="flex items-center mb-10">
+            <div className="flex items-center mb-5">
               <img
                 src={locationIcon}
                 alt="Location"
@@ -124,7 +128,7 @@ function LandingPage() {
               <p className="text-md font-medium text-[#043C2C]">
                 <a
                   href="/sponsors"
-                  className="no-underline flex items-center  text-md font-semibold "
+                  className="no-underline flex items-center text-md font-semibold "
                 >
                   Our sponsors
                 </a>{" "}
@@ -145,9 +149,9 @@ function LandingPage() {
             <a
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSfUU16gu_51u1-1dS0R84-R7SsuLLP6-r1ZpstccCVgNTFbJA/viewform"
-              className="text-xl text-black no-underline font-bold hover:underline uppercase"
+              className="text-xl text-black no-underline font-bold hover:underline uppercase flex flex-row"
             >
-              Register Now ⤴
+              Register Now <HiOutlineArrowUpRight className="mt-1 ml-3"/>
             </a>
           </div>
           <img
@@ -156,7 +160,6 @@ function LandingPage() {
             className="md:order-1 w-7/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
           />
         </section>
-
        
         <section className="bg-white py-10 px-5">
           <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">

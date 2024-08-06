@@ -4,7 +4,7 @@ import Netwerk from "../assets/membership.png";
 import Marketing from "../assets/solution.png";
 import Brand from "../assets/boosting-potential.png";
 import Demonstrate from "../assets/work-team.png";
-import { MdDownload } from 'react-icons/md';
+import { MdDownload } from "react-icons/md";
 import Footer from "../components/Footer";
 
 export default function Sponsorship() {
@@ -57,14 +57,12 @@ export default function Sponsorship() {
 
   return (
     <div className="flex flex-col min-h-screen h-fit  mt-20 bg-[#CDE2D3] overflow-x-hidden">
-      <section className="flex flex-col gap-10 items-center w-full md:h-[100svh]  h-svh mx-auto justify-center align-middle">
+      <section className="flex flex-col gap-10 items-center w-full md:h-[100svh]  h-svh mx-auto justify-center align-middle pt-10">
         <div className="px-4 sm:px-6 lg:px-8">
-        <h1 className="md:text-4xl text-3xl font-bold text-[#043C2C] md:mb-10 mb-5 flex items-center justify-center space-x-2">
-        SPONSORSHIPS
-       
-      </h1>
-          
-         
+          <h1 className="md:text-4xl text-3xl font-bold text-[#043C2C] md:mb-10 mb-5 flex items-center justify-center space-x-2">
+            SPONSORSHIPS
+          </h1>
+
           <div className="md:text-3xl text-lg font-normal w-full text-center">
             <p className="md:mb-6 mb-2">
               Join us as a sponsor for our upcoming motivational Seminar,
@@ -76,13 +74,15 @@ export default function Sponsorship() {
               industry <br />
               professionals and budding entrepreneurs.
             </p>
-            
-    
-      <a href="/SPONSORSHIP SCHEME FOR SEMINAR-APPROVED (4).pdf" download className="text-[#043C2C] flex items-center justify-center text-sm">
-        <span>  Click here to Download</span> 
-        <MdDownload size={20} className="ml-1" /> 
-      </a>
-    
+
+            <a
+              href="/SPONSORSHIP SCHEME FOR SEMINAR-APPROVED (4).pdf"
+              download
+              className="text-[#043C2C] flex items-center justify-center text-sm"
+            >
+              <span> Click here to Download</span>
+              <MdDownload size={20} className="ml-1" />
+            </a>
           </div>
         </div>
         <div className="flex flex-wrap items-end mb-16 pb-10 md:gap-32 gap-8 justify-around md:mt-20 mx-2">
