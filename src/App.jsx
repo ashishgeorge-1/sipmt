@@ -6,8 +6,11 @@ import LandingPage from './pages/LandingPage';
 import Sponsor from "./pages/Sponsor"
 import Speaker from "./pages/Speaker"
 import Contact from "./pages/Contact"
+import Invitation from "./pages/Invitation"
 import './App.css';
 import Footer from './components/Footer';
+import Sponsors from './pages/Sponsors';
+import Program from './pages/Program';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/sponsor" element={<Sponsor />} />
           <Route path="/speakers" element={<Speaker />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/invitation" element={<Invitation />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/schedule" element={<Program />} />
         </Routes>
         <Footer/>
       </div>
