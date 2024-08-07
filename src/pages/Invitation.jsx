@@ -1,5 +1,6 @@
 import React from "react";
 import anoop from "../assets/anoop.jpeg";
+import { getGithubRawUrl } from "../utils/githubUtils.jsx";
 
 export default function Invitation() {
   return (
@@ -30,10 +31,10 @@ export default function Invitation() {
           </a>
 
           <h3 className="text-xl font-bold text-[#043C2C] mb-4">Watch Video</h3>
-          <video controls className="w-full h-auto mb-4 border border-gray-300">
-            <source src="/VID-20240804-WA0023.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
+    <source src={getGithubRawUrl("videos/VID-20240804-WA0023.mp4")} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
           <a
             href="/VID-20240804-WA0023.mp4"
             download
