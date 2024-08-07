@@ -17,23 +17,11 @@ import spon1 from "../assets/somanylogo.jpg"
 import key1 from "../assets/key1.png";
 import key2 from "../assets/key2.png";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import { getGithubRawUrl } from "../utils/githubUtils.jsx";
 
 import key3 from "../assets/key3.png";
 import key4 from "../assets/key4.png";
 import anoop from "../assets/anoop.jpeg";
-import slide1 from "../assets/slide1.jpg";
-import slide2 from "../assets/slide2.jpg";
-import slide3 from "../assets/slide3.jpg";
-import slide4 from "../assets/slide4.jpg";
-import slide5 from "../assets/slide5.jpg";
-import slide6 from "../assets/slide6.jpg";
-import slide7 from "../assets/slide7.jpg";
-import slide8 from "../assets/slide8.jpg";
-import slide9 from "../assets/slide9.jpg";
-import slide10 from "../assets/slide10.jpg";
-import slide11 from "../assets/slide11.jpg";
-import slide12 from "../assets/slide12.jpg";
-import slide13 from "../assets/slide13.jpg";
 import { FaLink } from "react-icons/fa";
 
 function LoaderOverlay() {
@@ -190,52 +178,47 @@ function LandingPage() {
               WHAT IS SIPMT?
             </h2>
             <div className="w-full max-w-[1086px] mx-auto overflow-hidden rounded-lg mb-8 shadow-lg">
-  <Carousel
-    showThumbs={false}
-    infiniteLoop
-    interval={5000}
-    showStatus={false}
-    dynamicHeight={false}
-    emulateTouch={true}
-    showArrows={true}
-    swipeable={true}
-    transitionTime={500}
-    showIndicators={true}
-    renderArrowPrev={(onClickHandler, hasPrev) =>
-      hasPrev && (
-        <button
-          onClick={onClickHandler}
-          className="absolute left-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
-        >
-          &#10094;
-        </button>
-      )
-    }
-    renderArrowNext={(onClickHandler, hasNext) =>
-      hasNext && (
-        <button
-          onClick={onClickHandler}
-          className="absolute right-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
-        >
-          &#10095;
-        </button>
-      )
-    }
-  >
-    <img src={slide1} alt="Slide 1" className="w-full h-auto" />
-    <img src={slide2} alt="Slide 2" className="w-full h-auto" />
-    <img src={slide3} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide4} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide5} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide6} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide7} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide8} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide9} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide10} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide11} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide12} alt="Slide 3" className="w-full h-auto" />
-    <img src={slide13} alt="Slide 3" className="w-full h-auto" />
-  </Carousel>
+            <Carousel
+  showThumbs={false}
+  infiniteLoop
+  interval={5000}
+  showStatus={false}
+  dynamicHeight={false}
+  emulateTouch={true}
+  showArrows={true}
+  swipeable={true}
+  transitionTime={500}
+  showIndicators={true}
+  renderArrowPrev={(onClickHandler, hasPrev) =>
+    hasPrev && (
+      <button
+        onClick={onClickHandler}
+        className="absolute left-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
+      >
+        &#10094;
+      </button>
+    )
+  }
+  renderArrowNext={(onClickHandler, hasNext) =>
+    hasNext && (
+      <button
+        onClick={onClickHandler}
+        className="absolute right-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
+      >
+        &#10095;
+      </button>
+    )
+  }
+>
+  {[...Array(13)].map((_, index) => (
+    <img 
+      key={index}
+      src={getGithubRawUrl(`images/slide${index + 1}.jpg`)}
+      alt={`Slide ${index + 1}`}
+      className="w-full h-auto"
+    />
+  ))}
+</Carousel>
 </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
@@ -250,11 +233,11 @@ function LandingPage() {
               </p>
             </div>
             <div className=" flex justify-center items-center pt-10">
-              <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
-                <source src="/VID-20240804-WA0023.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+  <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
+    <source src={getGithubRawUrl("videos/VID-20240804-WA0023.mp4")} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
           </div>
         </section>
 
