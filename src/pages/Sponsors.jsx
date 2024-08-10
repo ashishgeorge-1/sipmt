@@ -1,7 +1,7 @@
-import React from "react";
 import diamond1 from "../assets/diamond1.jpg"
 import spon1 from "../assets/somanylogo.jpg"
 import silver from "../assets/silver.jpg"
+import gold from "../assets/gold.png"
 
 export default function Sponsors() {
   return (
@@ -45,23 +45,29 @@ export default function Sponsors() {
             </div>
             <div>
               <h3 className="mb-6 text-2xl flex justify-center font-bold">Gold Sponsors</h3>
-               <div className="flex flex-wrap gap-6 justify-center">
-              <p className="text-lg font-medium">
-          Sponsors are yet to be announced. Please wait.
-        </p>
-              </div>
+              <div className="flex flex-wrap gap-6 justify-center">
+                  <img
+                    src={gold}
+                    alt="gold Sponsor Logo"
+                    width={180}
+                    height={90}
+                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                  />
+                </div>
+                
             </div>
             <div>
               <h3 className="mb-6 text-2xl flex justify-center font-bold">Silver Sponsors</h3>
                <div className="flex flex-wrap gap-6 justify-center">
                   <img
                     src={silver}
-                    alt="Diamond Sponsor Logo"
+                    alt="siver Sponsor Logo"
                     width={180}
                     height={90}
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                   />
                 </div>
+                
                 
               
             </div>
