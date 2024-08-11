@@ -1,6 +1,7 @@
 import React from 'react'
 
 import anoop from '../assets/anoop.jpeg';
+import Sinojacob from "../assets/Sinojacob.jpg"
 export default function Speaker() {
   return (
     <section className="bg-white py-10 px-5 text-[#1c4330] h-svh">
@@ -13,14 +14,21 @@ export default function Speaker() {
           <img
             src={anoop}
             alt="Er. Anoop Ambika"
-            className="w-32 h-32 rounded-full object-cover mb-4"
+            className="w-32 h-40 rounded-full object-cover mb-4"
           />
           <h3 className="text-xl mb-2">Er. Anoop Ambika</h3>
           <p className="text-gray-600">CEO of Kerala Startup Mission</p>
         </div>
-        <h2 className="text-lg font-bold text-[#043C2C] mb-5">
-        More speakers to be decided soon.
-      </h2>
+        <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
+          <img
+            src={Sinojacob}
+            alt="Er. Anoop Ambika"
+            className="w-32 h-40 rounded-full object-cover mb-4"
+          />
+          <h3 className="text-xl mb-2">Er.Sino Jacob Mathew</h3>
+          <p className="text-gray-600">Assistant District Industries Officer</p>
+        </div>
+       
       </div>
     </div>
   </section>
