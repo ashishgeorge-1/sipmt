@@ -22,7 +22,7 @@ export default function Speaker() {
         <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
           <img
             src={Sinojacob}
-            alt="Er. Anoop Ambika"
+            alt="Er. Sino Jacod"
             className="w-32 h-40 rounded-full object-cover mb-4"
           />
           <h3 className="text-xl mb-2">Er.Sino Jacob Mathew</h3>

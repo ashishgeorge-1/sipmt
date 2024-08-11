@@ -4,16 +4,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import Footer from "../components/Footer";
 import Map from "../components/map";
-import Contact from "./Contact"
+import Contact from "./Contact";
 // Import all the required images
 import logo from "../assets/Meenachil Industrial Parks Logo.png";
 import logosvg from "../assets/logo.svg";
+
+import Sinojacob from "../assets/Sinojacob.jpg";
 import dateIcon from "../assets/date.png";
 import locationIcon from "../assets/location.png";
 import org1 from "../assets/org1.png";
 import org2 from "../assets/org2.png";
 import org3 from "../assets/org3.png";
-import spon1 from "../assets/somanylogo.jpg"
+import spon1 from "../assets/somanylogo.jpg";
 import key1 from "../assets/key1.png";
 import key2 from "../assets/key2.png";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
@@ -71,9 +73,8 @@ function LandingPage() {
           isLoading ? "pointer-events-none" : ""
         }`}
       >
-\
-
-<section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
+        \
+        <section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
           <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
             <h3 className="md:text-2xl underline font-thin text-xl mb-2">
               JOIN US FOR A SEMINAR ON
@@ -117,7 +118,7 @@ function LandingPage() {
                   href="/sponsor"
                   className="no-underline flex items-center text-md font-semibold "
                 >
-                  Sponsorship 
+                  Sponsorship
                 </a>{" "}
               </p>
             </div>
@@ -132,7 +133,7 @@ function LandingPage() {
                 </a>{" "}
               </p>
             </div>
-            
+
             <div className="flex items-center mb-4">
               <FaLink size={20} className="text-[#043C2C] mr-2" />
               <p className="text-md font-medium text-[#043C2C]">
@@ -149,7 +150,7 @@ function LandingPage() {
               href="https://docs.google.com/forms/d/e/1FAIpQLSfUU16gu_51u1-1dS0R84-R7SsuLLP6-r1ZpstccCVgNTFbJA/viewform"
               className="text-xl text-black no-underline font-bold hover:underline uppercase flex flex-row"
             >
-              Register Now <HiOutlineArrowUpRight className="mt-1 ml-3"/>
+              Register Now <HiOutlineArrowUpRight className="mt-1 ml-3" />
             </a>
           </div>
           <img
@@ -158,68 +159,64 @@ function LandingPage() {
             className="md:order-1 w-7/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
           />
         </section>
-       
         <section className="bg-white py-10 px-5">
           <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">
             <h2 className="text-2xl font-bold w-full text-[#043C2C] mt-5 ">
-             SPONSORED BY
+              SPONSORED BY
             </h2>
             <div className="flex flex-row md:justify-center items-center justify-center gap-10 md:gap-40 w-full h-fit mt-5 md:mt-0">
               <img src={spon1} alt="Organization 1" className="h-20 w-auto" />
-             
             </div>
           </div>
         </section>
-      
-
         <section className="bg-[#CDE2D3] py-10 px-5 text-bold-[#000000]">
           <div className="max-w-[1280px] mx-auto">
             <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
               WHAT IS SIPMT?
             </h2>
             <div className="w-full max-w-[1086px] mx-auto overflow-hidden rounded-lg mb-8 shadow-lg">
-            <Carousel
-  showThumbs={false}
-  infiniteLoop
-  interval={5000}
-  showStatus={false}
-  dynamicHeight={false}
-  emulateTouch={true}
-  showArrows={true}
-  swipeable={true}
-  transitionTime={500}
-  showIndicators={true}
-  renderArrowPrev={(onClickHandler, hasPrev) =>
-    hasPrev && (
-      <button
-        onClick={onClickHandler}
-        className="absolute left-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
-      >
-        &#10094;
-      </button>
-    )
-  }
-  renderArrowNext={(onClickHandler, hasNext) =>
-    hasNext && (
-      <button
-        onClick={onClickHandler}
-        className="absolute right-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
-      >
-        &#10095;
-      </button>
-    )
-  }
->
-  {[...Array(13)].map((_, index) => (
-    <img 
-      key={index}
-      src={getGithubRawUrl(`images/slide${index + 1}.jpg`)}
-      alt={`Slide ${index + 1}`}
-      className="w-full h-auto"
-    />
-  ))}
-</Carousel>
-</div>
+              <Carousel
+                showThumbs={false}
+                infiniteLoop
+                interval={5000}
+                showStatus={false}
+                dynamicHeight={false}
+                emulateTouch={true}
+                showArrows={true}
+                swipeable={true}
+                transitionTime={500}
+                showIndicators={true}
+                renderArrowPrev={(onClickHandler, hasPrev) =>
+                  hasPrev && (
+                    <button
+                      onClick={onClickHandler}
+                      className="absolute left-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
+                    >
+                      &#10094;
+                    </button>
+                  )
+                }
+                renderArrowNext={(onClickHandler, hasNext) =>
+                  hasNext && (
+                    <button
+                      onClick={onClickHandler}
+                      className="absolute right-2 top-1/2 z-10 -translate-y-1/2 bg-black bg-opacity-50 p-2 rounded-full"
+                    >
+                      &#10095;
+                    </button>
+                  )
+                }
+              >
+                {[...Array(13)].map((_, index) => (
+                  <img
+                    key={index}
+                    src={getGithubRawUrl(`images/slide${index + 1}.jpg`)}
+                    alt={`Slide ${index + 1}`}
+                    className="w-full h-auto"
+                  />
+                ))}
+              </Carousel>
+            </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
                 Meenachil Taluk, Known For Its Natural Beauty And Rich
@@ -233,14 +230,16 @@ function LandingPage() {
               </p>
             </div>
             <div className=" flex justify-center items-center pt-10">
-  <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
-    <source src={getGithubRawUrl("videos/VID-20240804-WA0023.mp4")} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
+              <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
+                <source
+                  src={getGithubRawUrl("videos/VID-20240804-WA0023.mp4")}
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </section>
-
         <section className="bg-[#CDE2D3] py-10 px-5 text-[#1c4330]">
           <div className="max-w-[1280px] mx-auto">
             <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
@@ -294,35 +293,34 @@ function LandingPage() {
             </div>
           </div>
         </section>
-
         <section className=" py-10 px-5 text-[#1c4330]">
           <div className="max-w-[1280px] mx-auto">
-            <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
+            <h2 className="text-2xl font-bold text-[#043C2C] mb-5 md:mb-10">
               PRESENTING OUR PANEL OF DISTINGUISHED SPEAKERS
             </h2>
             <div className="flex flex-wrap justify-center gap-8">
-              <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
-                <img
-                  src={anoop}
-                  alt="Er. Anoop Ambika"
-                  className="w-32 h-32 rounded-full object-cover mb-4"
-                />
-                <h3 className="text-xl mb-2">Er. Anoop P Ambika</h3>
-                <p className="text-center">
-                  Chief Executive Officer - Kerala Startup Mission
-                </p>
-                <h2 className="text-lg font-bold text-[#043C2C] mb-5 mt-10">
-                  More speakers to be decided soon.
-                </h2>
-              </div>
-
-              {/* Add more speakers here */}
-            </div>
-            
+        <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
+          <img
+            src={anoop}
+            alt="Er. Anoop Ambika"
+            className="w-32 h-40 rounded-full object-cover mb-4"
+          />
+          <h3 className="text-xl mb-2">Er. Anoop Ambika</h3>
+          <p className="text-gray-600">CEO of Kerala Startup Mission</p>
+        </div>
+        <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
+          <img
+            src={Sinojacob}
+            alt="Er. Sino Jacod"
+            className="w-32 h-40 rounded-full object-cover mb-4"
+          />
+          <h3 className="text-xl mb-2">Er.Sino Jacob Mathew</h3>
+          <p className="text-gray-600">Assistant District Industries Officer</p>
+        </div>
+       </div>
           </div>
         </section>
-       
-        <Contact/>
+        <Contact />
       </div>
     </>
   );
