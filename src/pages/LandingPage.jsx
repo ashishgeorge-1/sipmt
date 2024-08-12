@@ -210,29 +210,26 @@ function LandingPage() {
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
-              Pala, the queen of Meenachil Taluk and the neighboring areas is nature’s bounty in God’s own Country. Besides its repute as an agricultural paradise, Meenachil Taluk has produced eminent personalities who have made invaluable contributions to mainstream India. However, its huge potential to be home to an industrial hub remains to be exploited, besides the collateral advantage of huge growth in the associated ecosystem (transportation, constructions, hospitality, malls, medicare, housing, entertainment etc..) and retention / in-migration of talents.
+              Meenachil Taluk and the neighboring areas is nature’s bounty in God’s own Country. Besides its repute as an agricultural paradise, Meenachil Taluk has produced eminent personalities who have made invaluable contributions to mainstream India. However, its huge potential to be home to industrial hubs remains to be exploited. 
               </p>
               <p className="flex-1 text-justify">
-              A motivational seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” is envisaged by the Engineers’ Forum Pala (EFP) in association with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP) at the Alphonsian Pastoral Institute Arunapuram, Pala on 17 August 2024. Objective of the seminar is to create a stronger desire among the who-is-who of Meenachil Taluk to improve the industrial footprint of the region, create more local employment and eventually check brain drain / migration of skilled labour. Needless to say, Industrial parks shall be home to all kinds of business / manufacturing / R&D / IT / pharma / industrial training ventures. With Sabari highway and Sabari rail in the offing, Meenachil must gear up for a promising future. 
+              A motivational seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” is envisaged by the Engineers’ Forum Pala (EFP) in association with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP) at the Alphonsian Pastoral Institute Arunapuram, Pala on 17 August 2024. Objective of the seminar is to create a stronger desire among the people of Meenachil Taluk to improve the industrial footprint of the region, create more local employment and eventually check brain drain / migration of skilled labour.  
               </p>
               <p className="flex-1 text-justify">
-              The delegates to the seminar shall comprise of the members of EFP / PMA / RCP, MPs / MLA, Executives of Kerala Startup Mission / Industries Dept / KSIDC, Corporate executives, Panchayat Presidents, local industry representatives, industrial ecosystem partners mentioned above, academia, investors, domain specialists, sponsors and enthusiasts. 
+              250 delegates to the seminar shall comprise of the members of EFP / PMA / RCP, MPs / MLA, Executives of Kerala Startup Mission / Industries Dept / KSIDC, Corporate executives, Panchayat Presidents, local industry representatives, industrial ecosystem partners mentioned above, academia, investors, domain specialists, sponsors and enthusiasts. 
               </p>
-              <p className="flex-1 text-justify">The resource speakers for the seminar include Er Anoop Ambika CEO Kerala Startup Mission, eminent speakers from the Industries Dept and KSIDC besides select industry leaders. The detailed program shall be published separately.</p>
+              <div className="text-left space-y-2">
+  <p>Looking forward to your august company in the seminar,</p>
 
-              <p className="flex-1 text-justify">While the seminar shall set the ball rolling, EFP/PMA/RCP shall, to the extent possible, continue to hold hands with those who come forward to realise the(ir) dreams through the industrial parks.</p>
+  <p>SIPMT Seminar Committee</p>
 
-              <p className="flex-1 text-justify">You are cordially invited to join this noble cause not only by way of participation in the seminar but also by your wholehearted support by way of sponsorship. Details and benefits of sponsorship is placed in the annexure.</p> 
+  <p>
+    <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">
+      sipmt.pala@gmail.com
+    </a>
+  </p>
+</div>
 
-              <p className="flex-1 text-justify"> Looking forward to your august company in the seminar,</p>
-
-              <p className="flex-1 text-justify">SIPMT Seminar Committee</p>
-
-              <p className="flex-1 text-justify">
-  <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">
-    sipmt.pala@gmail.com
-  </a>
-</p>
 
 
             </div>
