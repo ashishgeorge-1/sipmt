@@ -312,7 +312,7 @@ function LandingPage() {
     alt="Er. Anoop Ambika"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Er. Anoop Ambika</h3>
+  <h3 className="text-xl font-bold mb-2">Er Anoop Ambika</h3>
   <p className="text-gray-600 font-bold">CEO of Kerala Startup Mission</p>
 </div>
 
@@ -322,7 +322,7 @@ function LandingPage() {
     alt="Er. Sino Jacod"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Er. Sino Jacob Mathew</h3>
+  <h3 className="text-xl font-bold mb-2">Er Sino Jacob Mathew</h3>
   <p className="text-gray-600 font-bold">Assistant District Industries Officer</p>
 </div>
 
