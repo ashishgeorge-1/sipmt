@@ -58,13 +58,12 @@ function LandingPage() {
 
   useEffect(() => {
     const img = new Image();
-    <img
+   <img
   src={logo}
   alt="SIPMT Logo"
-  className="md:order-1 w-10/12 md:w-4/6 md:mx-20 md:mb-24 md:mt-16"
+  className="md:order-1 w-8/12 md:w-3/6 md:mx-20 md:mb-24 md:mt-16"
 />
 
-  
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
@@ -215,17 +214,14 @@ function LandingPage() {
               </Carousel>
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
+            Pala, the queen of Meenachil Taluk, is renowned for its natural beauty and agricultural wealth. Despite its rich heritage and contributions to India, the region's potential to become an industrial hub remains largely untapped. This could lead to significant growth in various sectors such as transportation, construction, hospitality, healthcare, and more, while also retaining and attracting talent.
               <p className="flex-1 text-justify">
-              Pala, the queen of Meenachil Taluk, is renowned for its natural beauty and agricultural wealth. Despite its rich heritage and contributions to India, the region's potential to become an industrial hub remains largely untapped. This could lead to significant growth in various sectors such as transportation, construction, hospitality, healthcare, and more, while also retaining and attracting talent.
-              </p>
-              <p className="flex-1 text-justify">
-              To address this, the Engineers’ Forum Pala (EFP), in collaboration with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP), is organizing a seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” on 17 August 2024, at the Alphonsian Pastoral Institute, Arunapuram, Pala. The seminar aims to inspire the key stakeholders of Meenachil Taluk to enhance the region’s industrial footprint, create local employment, and reduce the migration of skilled labor. 
+              To address this, the Engineers’ Forum Pala (EFP), in collaboration with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP), is organizing a seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” on 17 August 2024, at the Alphonsian Pastoral Institute, Arunapuram, Pala. The seminar aims to inspire the key stakeholders of Meenachil Taluk to enhance the region’s industrial footprint, create local employment, and reduce the migration of skilled labor.
               </p>
               <p className="flex-1 text-justify">
               The seminar will feature distinguished speakers, including Er Anoop Ambika, CEO of Kerala Startup Mission, along with other industry leaders and experts from various sectors. The event will bring together members of EFP, PMA, RCP, government officials, corporate executives, local industry representatives, and other key players in the industrial ecosystem.
               </p>
-              <p className="flex-1 text-justify">This seminar marks the beginning of a collective effort to transform Meenachil Taluk into a thriving industrial zone. We invite you to be part of this noble cause by participating in the seminar and supporting it through sponsorship.</p> 
-
+              <p className="flex-1 text-justify">This seminar marks the beginning of a collective effort to transform Meenachil Taluk into a thriving industrial zone. We invite you to be part of this noble cause by participating in the seminar and supporting it through sponsorship.</p>
 
               <p className="flex-1 text-justify">
   For more information, please contact us at&nbsp;
