@@ -14,7 +14,7 @@ function Navigation() {
   return (
     <div className="fixed top-0 left-0  right-0 z-50 bg-[#CDE2D3]">
       <nav className="w-full py-4 border-b-2 border-[#043C2C] flex justify-between items-center md:flex-nowrap flex-wrap px-8">
-        <div className="font-bold text-2xl text-black">SIPMT</div>
+        <div className="font-bold text-3xl text-black">SIPMT</div>
         <button 
           onClick={toggleMenu} 
           className="md:hidden text-2xl cursor-pointer"
