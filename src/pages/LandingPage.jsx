@@ -6,10 +6,11 @@ import Footer from "../components/Footer";
 import Map from "../components/map";
 import Contact from "./Contact";
 // Import all the required images
-import logo from "../assets/Meenachil Industrial Parks Logo.png";
+import logo from "../assets/logo.png";
 import logosvg from "../assets/logo.svg";
 
 import Sinojacob from "../assets/Sinojacob.jpg";
+import susan from "../assets/susan.jpg"
 import dateIcon from "../assets/date.png";
 import locationIcon from "../assets/location.png";
 import org1 from "../assets/org1.png";
@@ -57,7 +58,13 @@ function LandingPage() {
 
   useEffect(() => {
     const img = new Image();
-    img.src = logo;
+    <img
+  src={logo}
+  alt="SIPMT Logo"
+  className="md:order-1 w-10/12 md:w-4/6 md:mx-20 md:mb-24 md:mt-16"
+/>
+
+  
     img.onload = () => {
       setTimeout(() => {
         setIsLoading(false);
@@ -159,17 +166,7 @@ function LandingPage() {
             className="md:order-1 w-7/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
           />
         </section>
-        <section className="bg-white py-10 px-5">
-          <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">
-            <h2 className="text-2xl font-bold w-full text-[#043C2C] mt-5 ">
-              SPONSORED BY
-            </h2>
-            <div className="flex flex-row md:justify-center items-center justify-center gap-10 md:gap-40 w-full h-fit mt-5 md:mt-0">
-              <img src={spon1} alt="Organization 1" className="h-20 w-auto" />
-            </div>
-          </div>
-        </section>
-        <section className="bg-[#CDE2D3] py-10 px-5 text-bold-[#000000]">
+        <section className="bg-[#CDE2D3] py-18 px-5 text-bold-[#000000]">
           <div className="max-w-[1280px] mx-auto">
             <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
               WHAT IS SIPMT?
@@ -219,15 +216,26 @@ function LandingPage() {
             </div>
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
-                Meenachil Taluk, Known For Its Natural Beauty And Rich
-                Agricultural Heritage, Has Significant Untapped Industrial
-                Potential.
+              Pala, the queen of Meenachil Taluk, is renowned for its natural beauty and agricultural wealth. Despite its rich heritage and contributions to India, the region's potential to become an industrial hub remains largely untapped. This could lead to significant growth in various sectors such as transportation, construction, hospitality, healthcare, and more, while also retaining and attracting talent.
               </p>
               <p className="flex-1 text-justify">
-                Our Seminar Aims To Unlock This Potential And Stimulate Growth
-                In Sectors Such As Education, Transportation, Construction, And
-                Healthcare, While Fostering Local Talent And Employment.
+              To address this, the Engineers’ Forum Pala (EFP), in collaboration with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP), is organizing a seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” on 17 August 2024, at the Alphonsian Pastoral Institute, Arunapuram, Pala. The seminar aims to inspire the key stakeholders of Meenachil Taluk to enhance the region’s industrial footprint, create local employment, and reduce the migration of skilled labor. 
               </p>
+              <p className="flex-1 text-justify">
+              The seminar will feature distinguished speakers, including Er Anoop Ambika, CEO of Kerala Startup Mission, along with other industry leaders and experts from various sectors. The event will bring together members of EFP, PMA, RCP, government officials, corporate executives, local industry representatives, and other key players in the industrial ecosystem.
+              </p>
+              <p className="flex-1 text-justify">This seminar marks the beginning of a collective effort to transform Meenachil Taluk into a thriving industrial zone. We invite you to be part of this noble cause by participating in the seminar and supporting it through sponsorship.</p> 
+
+
+              <p className="flex-1 text-justify">
+  For more information, please contact us at&nbsp;
+  <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">
+    sipmt.pala@gmail.com.
+  </a>
+</p>
+
+
+
             </div>
             <div className=" flex justify-center items-center pt-10">
               <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
@@ -308,6 +316,7 @@ function LandingPage() {
           <h3 className="text-xl mb-2">Er. Anoop Ambika</h3>
           <p className="text-gray-600">CEO of Kerala Startup Mission</p>
         </div>
+        
         <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3">
           <img
             src={Sinojacob}
@@ -317,6 +326,16 @@ function LandingPage() {
           <h3 className="text-xl mb-2">Er.Sino Jacob Mathew</h3>
           <p className="text-gray-600">Assistant District Industries Officer</p>
         </div>
+
+        <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 text-center"> {/* Added text-center */}
+  <img
+    src={susan}
+    alt="Er. Susan"
+    className="w-32 h-40 rounded-full object-cover mb-4"
+  />
+  <h3 className="text-xl mb-2">Susan Paul</h3>
+  <p className="text-gray-600">Vice President and Center Head, EXL Services, Infopark, Kochi.</p>
+</div>
        </div>
           </div>
         </section>

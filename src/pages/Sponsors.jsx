@@ -3,6 +3,8 @@ import spon1 from "../assets/somanylogo.jpg"
 import silver from "../assets/silver.jpg"
 import gold from "../assets/gold.png"
 import silver2 from "../assets/silver2.jpg"
+import diamond2 from "../assets/diamond2.jpg"
+import diamond3 from "../assets/diamond3.jpg"
 
 export default function Sponsors() {
   return (
@@ -32,15 +34,36 @@ export default function Sponsors() {
             </div>
             <div>
               <h3 className="mb-6 text-2xl flex justify-center font-bold">Diamond Sponsors</h3>
-               <div className="flex flex-wrap gap-6 justify-center">
-                  <img
-                    src={diamond1}
-                    alt="Diamond Sponsor Logo"
-                    width={180}
-                    height={90}
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  />
-                </div>
+              <div className="flex flex-col items-center">
+  <div className="flex flex-wrap gap-6 justify-center">
+    <img
+      src={diamond1}
+      alt="Diamond Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+  <div className="flex flex-wrap gap-12 justify-center mt-6"> {/* Added margin-top */}
+    <img
+      src={diamond2}
+      alt="Diamond Sponsor Logo"
+      width={240}
+      height={120}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+
+  <div className="flex flex-wrap gap-6 mt-6 justify-center">
+    <img
+      src={diamond3}
+      alt="Diamond Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+</div>
                 
               
             </div>
