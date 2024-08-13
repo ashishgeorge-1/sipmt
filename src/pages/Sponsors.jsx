@@ -6,6 +6,7 @@ import silver2 from "../assets/silver2.jpg";
 import diamond2 from "../assets/diamond2.jpg";
 import diamond3 from "../assets/diamond3.jpg";
 import gold1 from "../assets/gold1.png";
+import gold2 from "../assets/gold2.jpg";
 
 export default function Sponsors() {
   return (
@@ -81,7 +82,7 @@ export default function Sponsors() {
       className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
     />
   </div>
-  <div className="flex flex-wrap gap-6 justify-center mt-6 items-center">
+  <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
     <img
       src={gold1}
       alt="Gold Sponsor Logo"
@@ -90,6 +91,19 @@ export default function Sponsors() {
       className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
     />
   </div>
+
+  <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
+      src={gold2}
+      alt="Gold Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+
+
+
 
   <div className="mt-6 flex justify-center">
     <div className="bg-gray-100 border border-gray-300 rounded-lg px-6 py-3 shadow-sm">
