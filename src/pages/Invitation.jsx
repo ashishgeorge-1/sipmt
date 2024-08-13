@@ -4,8 +4,8 @@ import { getGithubRawUrl } from "../utils/githubUtils.jsx";
 
 export default function Invitation() {
   return (
-    <section className="bg-white py-10 px-5 text-[#1c4330] min-h-screen">
-      <div className="flex flex-col items-center">
+    <section className="bg-white py-10 px-5 text-[#1c4330] min-h-screen pt-10">
+      <div className="flex flex-col items-center pt-10">
         <h2 className="text-2xl font-bold text-[#043C2C] mb-5 text-center">
           Sustainable Industrial Parks in Meenachil Taluk (SIPMT) Seminar
         </h2>

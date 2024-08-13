@@ -10,7 +10,7 @@ import logo from "../assets/logo.png";
 import logosvg from "../assets/logo.svg";
 
 import Sinojacob from "../assets/Sinojacob.jpg";
-import susan from "../assets/susan.jpg"
+import susan from "../assets/susan.jpg";
 import dateIcon from "../assets/date.png";
 import locationIcon from "../assets/location.png";
 import org1 from "../assets/org1.png";
@@ -176,6 +176,7 @@ function LandingPage() {
                 showArrows={true}
                 swipeable={true}
                 transitionTime={500}
+                autoPlay={true}
                 showIndicators={true}
                 renderArrowPrev={(onClickHandler, hasPrev) =>
                   hasPrev && (
@@ -311,7 +312,7 @@ function LandingPage() {
     alt="Er. Anoop Ambika"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Er. Anoop Ambika</h3>
+  <h3 className="text-xl font-bold mb-2">Er Anoop Ambika</h3>
   <p className="text-gray-600 font-bold">CEO of Kerala Startup Mission</p>
 </div>
 
@@ -321,7 +322,7 @@ function LandingPage() {
     alt="Er. Sino Jacod"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Er. Sino Jacob Mathew</h3>
+  <h3 className="text-xl font-bold mb-2">Er Sino Jacob Mathew</h3>
   <p className="text-gray-600 font-bold">Assistant District Industries Officer</p>
 </div>
 
