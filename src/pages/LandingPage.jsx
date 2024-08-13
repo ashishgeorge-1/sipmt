@@ -155,10 +155,11 @@ function LandingPage() {
             </a>
           </div>
           <img
-            src={logo}
-            alt="SIPMT Logo"
-            className="md:order-1 w-7/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16"
-          />
+  src={logo}
+  alt="SIPMT Logo"
+  className="md:order-1 w-7/12 md:w-2/6 md:mx-20 md:mb-24 md:mt-16 mt-8"
+/>
+
         </section>
         <section className="bg-[#CDE2D3] py-18 px-5 text-bold-[#000000]">
           <div className="max-w-[1280px] mx-auto">
