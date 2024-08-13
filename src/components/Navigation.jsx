@@ -11,6 +11,10 @@ function Navigation() {
     setIsOpen(!isOpen);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="fixed top-0 left-0  right-0 z-50 bg-[#CDE2D3]">
       <nav className="w-full py-4 border-b-2 border-[#043C2C] flex justify-between items-center md:flex-nowrap flex-wrap px-8">
@@ -22,16 +26,16 @@ function Navigation() {
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
         <ul className={`${isOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row justify-around items-center w-full md:w-auto m-0 p-0 list-none`}>
-          <NavItem to="/" active={location.pathname === '/'} onClick={() => setIsOpen(false)}>
+          <NavItem to="/" active={location.pathname === '/'} onClick={() => { setIsOpen(false); scrollToTop(); }}>
             HOME
           </NavItem>
-          <NavItem to="/speakers" active={location.pathname === '/speakers'} onClick={() => setIsOpen(false)}>
+          <NavItem to="/speakers" active={location.pathname === '/speakers'} onClick={() => { setIsOpen(false); scrollToTop(); }}>
             SPEAKERS
           </NavItem>
-          <NavItem to="/sponsor" active={location.pathname === '/sponsor'} onClick={() => setIsOpen(false)}>
+          <NavItem to="/sponsor" active={location.pathname === '/sponsor'} onClick={() => { setIsOpen(false); scrollToTop(); }}>
             SPONSORSHIP
           </NavItem>
-          <NavItem to="/contact" active={location.pathname === '/contact'} onClick={() => setIsOpen(false)}>
+          <NavItem to="/contact" active={location.pathname === '/contact'} onClick={() => { setIsOpen(false); scrollToTop(); }}>
             CONTACT
           </NavItem>
         </ul>
