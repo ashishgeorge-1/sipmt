@@ -1,12 +1,18 @@
 import diamond1 from "../assets/diamond1.jpg";
 import spon1 from "../assets/somanylogo.jpg";
 import silver from "../assets/silver.jpg";
-import gold from "../assets/gold.png";
 import silver2 from "../assets/silver2.jpg";
+import silver3 from "../assets/silver3.png";
+import gold from "../assets/gold.png";
+import gold3 from "../assets/gold3.jpg";
 import diamond2 from "../assets/diamond2.jpg";
 import diamond3 from "../assets/diamond3.jpg";
+import diamond4 from "../assets/diamond4.png";
 import gold1 from "../assets/gold1.png";
 import gold2 from "../assets/gold2.jpg";
+import gold4 from "../assets/gold4.png";
+import gold5 from "../assets/gold5.png";
+
 
 export default function Sponsors() {
   return (
@@ -44,6 +50,15 @@ export default function Sponsors() {
                 <div className="flex flex-wrap gap-6 justify-center">
                   <img
                     src={diamond1}
+                    alt="Diamond Sponsor Logo"
+                    width={180}
+                    height={90}
+                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-12 justify-center">
+                  <img
+                    src={diamond4}
                     alt="Diamond Sponsor Logo"
                     width={180}
                     height={90}
@@ -94,6 +109,36 @@ export default function Sponsors() {
 
   <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
     <img
+      src={gold3}
+      alt="Gold Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+
+  <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
+      src={gold5}
+      alt="Gold Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+
+  <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
+      src={gold4}
+      alt="Gold Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+
+  <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
       src={gold2}
       alt="Gold Sponsor Logo"
       width={180}
@@ -127,14 +172,31 @@ export default function Sponsors() {
                   height={90}
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                 />
+            
+              </div>
+
+
+              <div className="flex flex-wrap gap-10 justify-center">
                 <img
-                  src={silver2}
+                  src={silver3}
                   alt="Silver Sponsor Logo"
                   width={180}
                   height={90}
-                  className="aspect-[2/1] overflow-hidden rounded-lg border object-contain object-center"
+                  className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                 />
+            
               </div>
+
+
+              <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
+      src={silver2}
+      alt="Gold Sponsor Logo"
+      width={180}
+      height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
             </div>
           </div>
         </div>
