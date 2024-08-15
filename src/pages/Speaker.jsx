@@ -48,7 +48,7 @@ export default function Speaker() {
   return (
     <section className="bg-white py-10 px-5 text-[#1c4330]">
       <div className="max-w-[1280px] mx-auto">
-        <h2 className="text-2xl font-bold text-[#043C2C] mb-5 text-center mt-10">
+        <h2 className="text-2xl font-bold py-14 text-[#043C2C] mb-5 text-center mt-10">
           PRESENTING OUR PANEL OF DISTINGUISHED SPEAKERS
         </h2>
         <div className="flex flex-wrap justify-center gap-8">
@@ -57,10 +57,10 @@ export default function Speaker() {
               <img
                 src={speaker.image}
                 alt={speaker.name}
-                className="w-32 h-40 rounded-full object-cover mb-4"
+                className="w-32 h-40 rounded-full object-cover mb-5"
               />
-              <h3 className="text-xl font-bold mb-2 text-center">{speaker.name}</h3>
-              <p className="text-gray-600 font-bold text-center mb-3">{speaker.title}</p>
+              <h3 className="text-xl font-bold mb-3 text-center">{speaker.name}</h3>
+              <p className="text-gray-600 font-bold text-center mb-5">{speaker.title}</p>
               <button
                 onClick={() => toggleDescription(index)}
                 className="bg-[#043C2C] text-white px-4 py-2 rounded-full hover:bg-[#1c4330] transition-colors"

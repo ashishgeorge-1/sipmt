@@ -3,21 +3,20 @@ export default function Program() {
   return (
     <section className="bg-white py-10 px-5 text-[#1c4330] min-h-screen pt-24">
       <div className="max-w-[1280px] mx-auto">
-        <h2 className="text-2xl font-bold text-[#043C2C] mb-5 mt-10">Program Schedule</h2>
 
-        <h1 className="text-3xl font-bold mb-6">
+        <h1 className="text-3xl pt-3 font-bold mb-6">
           SEMINAR ON SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK
         </h1>
-        <h2 className="text-xl font-semibold mb-6">
+        <h2 className="text-2xl font-semibold mb-6">
           SEMINAR PROGRAMME AT ALPHONSIAN PASTORAL INSTITUTE PALA <br /> ON 17 AUGUST 2024
         </h2>
 
-        <div className="space-y-8">
+        <div className="space-y-8 font-medium">
           <h3 className="text-2xl font-semibold">Session 1: 9:30 am</h3>
           <ul className="ml-4 text-xl text-gray-700 space-y-3">
             <li className="flex items-start space-x-2">
               <span className="text-gray-900 font-semibold">•</span>
-              <span className="hover:text-gray-900 transition duration-300">Welcome note and lighting the lamp</span>
+              <span className="hover:text-gray-900  transition duration-300">Welcome note and lighting the lamp</span>
             </li>
             <li className="flex items-start space-x-2">
               <span className="text-gray-900 font-semibold">•</span>
@@ -41,7 +40,7 @@ export default function Program() {
 
           <h4 className="text-xl font-semibold mt-6 text-[#043C2C]">Tea Break</h4>
 
-          <h3 className="text-2xl font-semibold">Session 2: 11:00h</h3>
+          <h3 className="text-2xl font-semibold">Session 2: 11:00 am</h3>
           <ul className="ml-4 text-xl text-gray-700 space-y-3">
             <li className="flex items-start space-x-2">
               <span className="text-gray-900 font-semibold">•</span>
@@ -65,7 +64,7 @@ export default function Program() {
 
           <h4 className="text-xl font-semibold mt-6 text-[#043C2C]">Break</h4>
 
-          <h3 className="text-2xl font-semibold">Session 3: 11:50h</h3>
+          <h3 className="text-2xl font-semibold">Session 3: 11:50 am</h3>
           <ul className="ml-4 text-xl text-gray-700 space-y-3">
             <li className="flex items-start space-x-2">
               <span className="text-gray-900 font-semibold">•</span>

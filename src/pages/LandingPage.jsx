@@ -215,21 +215,13 @@ function LandingPage() {
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
               Meenachil Taluk and the neighboring areas is nature’s bounty in God’s own Country. Besides its repute as an agricultural paradise, Meenachil Taluk has produced eminent personalities who have made invaluable contributions to mainstream India. However, its huge potential to be home to industrial hubs remains to be exploited. 
-              
-              A motivational seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” is envisaged by the Engineers’ Forum Pala (EFP) in association with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP) at the Alphonsian Pastoral Institute Arunapuram, Pala on 17 August 2024. Objective of the seminar is to create a stronger desire among the people of Meenachil Taluk to improve the industrial footprint of the region, create more local employment and eventually check brain drain / migration of skilled labour.  
-              
+              A motivational seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” is envisaged by the Engineers’ Forum Pala (EFP) in association with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP) at the Alphonsian Pastoral Institute Arunapuram, Pala on 17 August 2024. Objective of the seminar is to create a stronger desire among the people of Meenachil Taluk to improve the industrial footprint of the region, create more local employment and eventually check brain drain / migration of skilled labour.
               250 delegates to the seminar shall comprise of the members of EFP / PMA / RCP, MPs / MLA, Executives of Kerala Startup Mission / Industries Dept / KSIDC, Corporate executives, Panchayat Presidents, local industry representatives, industrial ecosystem partners mentioned above, academia, investors, domain specialists, sponsors and enthusiasts. 
               </p>
-             
-
-
-
-            </div>
+             </div>
             <div className=" mt-5 text-center font-medium space-y-2 flex items-center justify-center">
-  <p>Looking forward to your august company in the seminar,SIPMT Seminar Committee <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">
-      sipmt.pala@gmail.com
-    </a></p>
-</div>
+            <p>Looking forward to your august company in the seminar, <br />SIPMT Seminar Committee <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">sipmt.pala@gmail.com</a></p>
+            </div>
             <div className=" flex justify-center items-center pt-10">
               <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
                 <source
@@ -243,7 +235,7 @@ function LandingPage() {
         </section>
         <section className="bg-[#CDE2D3] py-10 px-5 text-[#1c4330]">
           <div className="max-w-[1280px] mx-auto">
-            <h2 className="text-2xl font-bold text-[#043C2C] mb-5">
+            <h2 className="text-2xl font-bold text-[#043C2C] my-8">
               KEY OBJECTIVES
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -285,7 +277,7 @@ function LandingPage() {
         </section>
         <section className="bg-white py-5 px-5 ">
           <div className="flex flex-col md:flex-row md:items-start items-center max-w-[1280px] mx-auto">
-            <h2 className="text-2xl mt-5 font-bold w-full text-[#043C2C] mb-5">
+            <h2 className="text-2xl mt-8 font-bold w-full text-[#043C2C] mb-5">
               ORGANIZED BY
             </h2>
             <div className="flex flex-row md:justify-end items-center justify-center gap-10 md:gap-40 w-full h-fit">
@@ -297,8 +289,8 @@ function LandingPage() {
           </div>
         </section>
         <section className=" py-10 px-5 text-[#1c4330]">
-          <div className="max-w-[1280px] mx-auto">
-            <h2 className="text-2xl font-bold text-[#043C2C] mb-5 md:mb-10">
+          <div className="max-w-[1280px] mx-auto ">
+            <h2 className="text-2xl font-bold text-[#043C2C] my-5 md:mb-10">
               PRESENTING OUR PANEL OF DISTINGUISHED SPEAKERS
             </h2>
             <div className="flex flex-wrap justify-center gap-8">
@@ -308,7 +300,7 @@ function LandingPage() {
     alt="Er. Anoop Ambika"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Er Anoop Ambika</h3>
+  <h3 className="text-xl font-bold mb-3">Er Anoop Ambika</h3>
   <p className="text-gray-600 font-bold">CEO of Kerala Startup Mission</p>
 </div>
 
@@ -318,7 +310,7 @@ function LandingPage() {
     alt="Er. Sino Jacod"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Er Sino Jacob Mathew</h3>
+  <h3 className="text-xl font-bold mb-3">Er Sino Jacob Mathew</h3>
   <p className="text-gray-600 font-bold">Assistant District Industries Officer</p>
 </div>
 
@@ -328,7 +320,7 @@ function LandingPage() {
     alt="Er. Susan"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Susan Paul</h3>
+  <h3 className="text-xl font-bold mb-3">Susan Paul</h3>
   <p className="text-gray-600 font-bold">Vice President and Center Head, EXL Services, Infopark, Kochi.</p>
 </div>
 
@@ -338,7 +330,7 @@ function LandingPage() {
     alt="Er. Susan"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Mr Ajay George Varghese</h3>
+  <h3 className="text-xl font-bold mb-3">Mr Ajay George Varghese</h3>
   <p className="text-gray-600 font-bold">MD Bipha Ayurveda</p>
 </div>
 <div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 text-center">
@@ -347,7 +339,7 @@ function LandingPage() {
     alt="Er. Susan"
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
-  <h3 className="text-xl font-bold mb-2">Mr Binu Jose</h3>
+  <h3 className="text-xl font-bold mb-3">Mr Binu Jose</h3>
   <p className="text-gray-600 font-bold">Vodafone Idea Kerala Head</p>
 </div>
 

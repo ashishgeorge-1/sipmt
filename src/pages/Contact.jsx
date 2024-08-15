@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section className="bg-white py-16 px-8 text-[#1c4330] mt-12">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-[#043C2C] mb-8 text-left border-b-2 border-gray-300 pb-4">
+        <h2 className="text-2xl font-bold text-[#043C2C] mb-8 text-left border-b-2 border-gray-300 pb-4">
           Contact Us
         </h2>
         <div className="flex items-center justify-center pb-5 border-b-2">
