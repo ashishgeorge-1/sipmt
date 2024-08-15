@@ -215,28 +215,21 @@ function LandingPage() {
             <div className="flex flex-col md:flex-row justify-between gap-8">
               <p className="flex-1 text-justify">
               Meenachil Taluk and the neighboring areas is nature’s bounty in God’s own Country. Besides its repute as an agricultural paradise, Meenachil Taluk has produced eminent personalities who have made invaluable contributions to mainstream India. However, its huge potential to be home to industrial hubs remains to be exploited. 
-              </p>
-              <p className="flex-1 text-justify">
+              
               A motivational seminar titled “SUSTAINABLE INDUSTRIAL PARKS IN MEENACHIL TALUK” is envisaged by the Engineers’ Forum Pala (EFP) in association with the Pala Management Association (PMA) and the Rotary Club of Pala (RCP) at the Alphonsian Pastoral Institute Arunapuram, Pala on 17 August 2024. Objective of the seminar is to create a stronger desire among the people of Meenachil Taluk to improve the industrial footprint of the region, create more local employment and eventually check brain drain / migration of skilled labour.  
-              </p>
-              <p className="flex-1 text-justify">
+              
               250 delegates to the seminar shall comprise of the members of EFP / PMA / RCP, MPs / MLA, Executives of Kerala Startup Mission / Industries Dept / KSIDC, Corporate executives, Panchayat Presidents, local industry representatives, industrial ecosystem partners mentioned above, academia, investors, domain specialists, sponsors and enthusiasts. 
               </p>
-              <div className="text-left space-y-2">
-  <p>Looking forward to your august company in the seminar,</p>
-
-  <p>SIPMT Seminar Committee</p>
-
-  <p>
-    <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">
-      sipmt.pala@gmail.com
-    </a>
-  </p>
-</div>
+             
 
 
 
             </div>
+            <div className=" mt-5 text-center font-medium space-y-2 flex items-center justify-center">
+  <p>Looking forward to your august company in the seminar,SIPMT Seminar Committee <a href="mailto:sipmt.pala@gmail.com" className="text-blue-500 underline">
+      sipmt.pala@gmail.com
+    </a></p>
+</div>
             <div className=" flex justify-center items-center pt-10">
               <video className="md:w-[50vw] w-[100vw] h-[70vh]" controls>
                 <source
