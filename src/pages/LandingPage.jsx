@@ -79,7 +79,7 @@ function LandingPage() {
         \
         <section className="flex md:flex-row flex-col gap-10 mt-5 items-center w-full max-w-[1280px] h-[100vh] mx-auto py-10 px-5 justify-center">
           <div className="w-full flex flex-col justify-center md:order-1 order-2 md:w-3/4 lg:w-1/2">
-            <h3 className="md:text-2xl underline font-thin text-xl mb-2">
+            <h3 className="md:text-2xl font-thin text-xl mb-2">
               JOIN US FOR A SEMINAR ON
             </h3>
 
