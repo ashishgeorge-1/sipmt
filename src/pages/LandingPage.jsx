@@ -8,6 +8,7 @@ import Contact from "./Contact";
 // Import all the required images
 import logo from "../assets/logo.png";
 import logosvg from "../assets/logo.svg";
+import ajay from "../assets/ajay.jpg";
 
 import Sinojacob from "../assets/Sinojacob.jpg";
 import susan from "../assets/susan.jpg";
@@ -335,6 +336,16 @@ function LandingPage() {
   />
   <h3 className="text-xl font-bold mb-2">Susan Paul</h3>
   <p className="text-gray-600 font-bold">Vice President and Center Head, EXL Services, Infopark, Kochi.</p>
+</div>
+
+<div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 text-center">
+  <img
+    src={ajay}
+    alt="Er. Susan"
+    className="w-32 h-40 rounded-full object-cover mb-4"
+  />
+  <h3 className="text-xl font-bold mb-2">Mr Ajay George Varghese</h3>
+  <p className="text-gray-600 font-bold">MD Bipha Ayurveda.</p>
 </div>
 
        </div>
