@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import logo from "../assets/logo.png";
 import logosvg from "../assets/logo.svg";
 import ajay from "../assets/ajay.jpg";
+import george from "../assets/george.jpg";
 
 import Sinojacob from "../assets/Sinojacob.jpg";
 import susan from "../assets/susan.jpg";
@@ -341,6 +342,15 @@ function LandingPage() {
   />
   <h3 className="text-xl font-bold mb-3">Mr Binu Jose</h3>
   <p className="text-gray-600 font-bold">Vodafone Idea Kerala Head</p>
+</div>
+<div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 text-center">
+  <img
+    src={george}
+    alt="george"
+    className="w-32 h-40 rounded-full object-cover mb-4"
+  />
+  <h3 className="text-xl font-bold mb-3">Mr George Thomas</h3>
+  <p className="text-gray-600 font-bold">Director Brilliant Study Center</p>
 </div>
 
        </div>
