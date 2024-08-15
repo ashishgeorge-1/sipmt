@@ -24,8 +24,9 @@ export default function Speaker() {
       name: "Susan Paul",
       title: "Vice President and Center Head, EXL Services, Infopark, Kochi",
       image: susan,
-      description: "Susan Paul is a dynamic leader in the IT services sector. Her strategic vision and operational excellence have been key to EXL Services' success in Kochi. She is known for her innovative approaches to talent development and business growth."
+      description: "Susan Paul is a dynamic leader in the IT services sector. Her strategic vision and operational excellence have been key to EXL Services' success in Kochi. Susan Paul is currently serving as the Vice President at EXL, a position she has held since January 2021, with over three years of experience in this role in India. Prior to this, she worked as Senior Assistant Vice President at EXL from November 2014 to January 2021, accumulating six years and three months of expertise in leadership. Earlier, from January 2012 to October 2014, she was the Assistant Vice President at EXL, where she managed transitions and migration of finance and accounting services. Additionally, she served as DGM at Outsource Partners International in Kochi, India, from November 2010 to December 2011, focusing on managing operations in finance and accounting processes, including P2P, O2C, and R2R. Susan is a qualified Chartered Accountant, having completed her CA from the Institute of Chartered Accountants of India between 1993 and 1997. She also holds a Bachelor of Science degree in Mathematics from Stella Maris College, which she earned from 1986 to 1989. She is known for her innovative approaches to talent development and business growth."
     },
+    
     {
       name: "Mr Ajay George Varghese",
       title: "MD Bipha Ayurveda",
