@@ -22,6 +22,7 @@ import key1 from "../assets/key1.png";
 import key2 from "../assets/key2.png";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import { getGithubRawUrl } from "../utils/githubUtils.jsx";
+import Binu from "../assets/Binu.jpg";
 
 import key3 from "../assets/key3.png";
 import key4 from "../assets/key4.png";
@@ -345,7 +346,16 @@ function LandingPage() {
     className="w-32 h-40 rounded-full object-cover mb-4"
   />
   <h3 className="text-xl font-bold mb-2">Mr Ajay George Varghese</h3>
-  <p className="text-gray-600 font-bold">MD Bipha Ayurveda.</p>
+  <p className="text-gray-600 font-bold">MD Bipha Ayurveda</p>
+</div>
+<div className="flex flex-col items-center w-full sm:w-1/2 md:w-1/3 text-center">
+  <img
+    src={Binu}
+    alt="Er. Susan"
+    className="w-32 h-40 rounded-full object-cover mb-4"
+  />
+  <h3 className="text-xl font-bold mb-2">Mr Binu Jose</h3>
+  <p className="text-gray-600 font-bold">Vodafone Idea Kerala Head</p>
 </div>
 
        </div>

@@ -9,6 +9,8 @@ import diamond2 from "../assets/diamond2.jpg";
 import diamond3 from "../assets/diamond3.jpg";
 import diamond4 from "../assets/diamond4.png";
 import diamond5 from "../assets/diamond5.png";
+import diamond6 from "../assets/diamond6.png";
+import diamond7 from "../assets/diamond7.jpg";
 import gold1 from "../assets/gold1.png";
 import gold2 from "../assets/gold2.jpg";
 import gold4 from "../assets/gold4.png";
@@ -92,6 +94,24 @@ export default function Sponsors() {
                     src={diamond5}
                     alt="Diamond Sponsor Logo"
                     width={180}
+                    height={90}
+                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-6 mt-6 justify-center">
+                  <img
+                    src={diamond6}
+                    alt="Diamond Sponsor Logo"
+                    width={180}
+                    height={90}
+                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-6 mt-6 justify-center">
+                  <img
+                    src={diamond7}
+                    alt="Diamond Sponsor Logo"
+                    width={220}
                     height={90}
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                   />
