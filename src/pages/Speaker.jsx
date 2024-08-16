@@ -42,9 +42,8 @@ export default function Speaker() {
     },
     {
       name: "Mr George Mathew",
-      title: "Managing Director, ABC Corporation",
+      title: "Director Brilliant Study Centre",
       image: george,
-      description: "George Mathew is a seasoned executive with over 20 years of experience in the corporate world. As the Managing Director of ABC Corporation, he has led the company to new heights with his innovative strategies and strong leadership. Under his guidance, ABC Corporation has expanded its operations globally and has become a leader in its industry. George holds an MBA from the University of Chicago and a BSc in Engineering from the Indian Institute of Technology. He is known for his forward-thinking approach and commitment to excellence."
     }
   ];
 
