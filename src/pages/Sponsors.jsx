@@ -4,6 +4,7 @@ import silver from "../assets/silver.jpg";
 import silver2 from "../assets/silver2.jpg";
 import silver3 from "../assets/silver3.png";
 import silver4 from "../assets/silver4.jpg";
+import silver5 from "../assets/silver5.jpg";
 import gold from "../assets/gold.png";
 import gold3 from "../assets/gold3.jpg";
 import diamond2 from "../assets/diamond2.jpg";
@@ -18,6 +19,8 @@ import gold2 from "../assets/gold2.jpg";
 import gold4 from "../assets/gold4.png";
 import gold5 from "../assets/gold5.png";
 import gold6 from "../assets/gold6.png";
+import gold7 from "../assets/gold7.jpg";
+import gold8 from "../assets/gold8.jpg";
 
 
 
@@ -48,6 +51,15 @@ export default function Sponsors() {
                   className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                 />
               </div>
+              <div className="flex flex-wrap gap-6 mt-6 justify-center">
+                  <img
+                    src={diamond7}
+                    alt="Diamond Sponsor Logo"
+                    width={220}
+                    height={90}
+                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                  />
+                </div>
             </div>
             <div>
               <h3 className="mb-6 text-2xl flex justify-center font-bold">
@@ -118,15 +130,7 @@ export default function Sponsors() {
                     className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
                   />
                 </div>
-                <div className="flex flex-wrap gap-6 mt-6 justify-center">
-                  <img
-                    src={diamond7}
-                    alt="Diamond Sponsor Logo"
-                    width={220}
-                    height={90}
-                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                  />
-                </div>
+          
               </div>
             </div>
             <div>
@@ -147,6 +151,24 @@ export default function Sponsors() {
       alt="Gold Sponsor Logo"
       width={180}
       height={90}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+   <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
+      src={gold7}
+      alt="Gold Sponsor Logo"
+      width={280}
+      height={140}
+      className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+    />
+  </div>
+  <div className="flex flex-wrap gap-6 justify-center mt-12 items-center">
+    <img
+      src={gold8}
+      alt="Gold Sponsor Logo"
+      width={220}
+      height={120}
       className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
     />
   </div>
@@ -210,6 +232,16 @@ export default function Sponsors() {
               <div className="flex flex-wrap gap-10 justify-center">
                 <img
                   src={silver}
+                  alt="Silver Sponsor Logo"
+                  width={180}
+                  height={90}
+                  className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                />
+            
+              </div>
+              <div className="flex flex-wrap gap-10 justify-center">
+                <img
+                  src={silver5}
                   alt="Silver Sponsor Logo"
                   width={180}
                   height={90}
