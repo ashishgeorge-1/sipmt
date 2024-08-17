@@ -4,7 +4,8 @@ import Sinojacob from "../assets/Sinojacob.jpg";
 import susan from "../assets/susan.jpg";
 import ajay from "../assets/ajay.jpg";
 import Binu from "../assets/Binu.jpg";
-import george from "../assets/george.jpg";  // Import the new image
+import george from "../assets/george.jpg"; 
+import varghese from "../assets/varghese.jpg"; // Import the new image
 
 export default function Speaker() {
   const [expandedSpeaker, setExpandedSpeaker] = useState(null);
@@ -40,11 +41,20 @@ export default function Speaker() {
       image: Binu,
       description: "Mr Binu Jose holds a BSc from STC Pala and an MBA from Poona University. He is currently working with Vodafone Idea as the Head of Kerala Circle Operations. His career began with Tata Press Ltd, followed by roles at Sify Ltd, Tata Teleservices, Hutch, and Vodafone. He has gained extensive experience working in various markets, including Mumbai, Maharashtra, Tamil Nadu, and Kerala."
     },
+
     {
       name: "Mr George Mathew",
       title: "Director Brilliant Study Centre",
       image: george,
+      description: "Mr. George Mathew is the Director of Brilliant Study Centre, a premier entrance coaching institute in India. Since its establishment in 1984, Brilliant Study Centre has built a legacy of excellence, guiding medical and engineering aspirants to success. Under his leadership, the institute has emerged as a leader in entrance coaching, contributing over 1 lakh doctors and 1.5 lakh engineers to the nation over the past 40 years."
+},
+    {
+      name: "Mr Varghese Malakkaran",
+      title: "GM KSIDC",
+      image: varghese,
+      description: "Mr. Varghese Malakkaran, GM of KSIDC and Chief Information Officer (CIO), is a seasoned professional with a rich educational and career background. He completed his schooling at St. Sebastian’s High School Kuttikkad, graduated in Physics from Christ College Irinjalakuda, and advanced his expertise with a Post Graduate Diploma in Computer Application from Government Model Engineering College, Thrikkakkara, followed by a Masters in Computer Application from SRM University. A CISCO Certified Network Associate (CCNA), Mr. Malakkaran began his career as a Computer Instructor at Sacred Heart College, Chalakudy, and later worked as a software developer in the Quality Assurance Division of Apollo Tyres, Perambra. Since joining KSIDC in 1997, he has significantly contributed to various divisions including IT, Business Development, Overseas Investment Promotion Cell (OIPC), and Administration. Currently, he leads the Investment Facilitation and Investment Promotion division. His professional achievements include the development and maintenance of the Single Window Clearance portal, KSWIFT, and the online Centralised Inspection System, K-CIS, for statutory inspections, earning him the Chief Minister’s Award for Administrative Innovations in 2020 and the CSI-SIG Award of Appreciation in 2019."
     }
+ 
   ];
 
   const toggleDescription = (index) => {
